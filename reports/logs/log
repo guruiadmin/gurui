@@ -1,0 +1,4 @@
+INFO 2019-10-19 14:24:05,350 basehttp 124 "GET / HTTP/1.1" 200 1714
+WARNING 2019-10-19 14:24:05,425 base 152 Not Found: /favicon.ico
+WARNING 2019-10-19 14:24:05,426 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 1963
+INFO 2019-10-19 14:37:49,436 basehttp 124 "GET /api/index?user=BOSS HTTP/1.1" 200 350
