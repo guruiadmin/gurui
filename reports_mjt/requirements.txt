@@ -1,4 +1,4 @@
-Django==1.11.11
+Django==1.11.23
 PyMySQL==0.9.3
 djangorestframework
 pandas==0.20.3
