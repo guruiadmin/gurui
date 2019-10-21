@@ -2,3 +2,299 @@ INFO 2019-10-19 14:24:05,350 basehttp 124 "GET / HTTP/1.1" 200 1714
 WARNING 2019-10-19 14:24:05,425 base 152 Not Found: /favicon.ico
 WARNING 2019-10-19 14:24:05,426 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 1963
 INFO 2019-10-19 14:37:49,436 basehttp 124 "GET /api/index?user=BOSS HTTP/1.1" 200 350
+WARNING 2019-10-21 10:09:21,273 base 152 Not Found: /
+WARNING 2019-10-21 10:09:21,276 basehttp 124 "GET / HTTP/1.1" 404 2017
+WARNING 2019-10-21 10:09:21,389 base 152 Not Found: /favicon.ico
+WARNING 2019-10-21 10:09:21,391 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2068
+INFO 2019-10-21 10:09:45,612 basehttp 124 "GET /api/index HTTP/1.1" 200 91
+WARNING 2019-10-21 11:36:41,219 base 152 Not Found: /
+WARNING 2019-10-21 11:36:41,220 basehttp 124 "GET / HTTP/1.1" 404 2017
+INFO 2019-10-21 11:37:26,802 basehttp 124 "GET /api/index?name=BOSS HTTP/1.1" 200 91
+INFO 2019-10-21 11:38:01,324 basehttp 124 "GET /api/index?name=BOSS HTTP/1.1" 200 91
+INFO 2019-10-21 11:38:22,845 basehttp 124 "GET /api/index?name=%E9%99%86 HTTP/1.1" 200 91
+INFO 2019-10-21 11:39:00,984 basehttp 124 "GET /api/index?name=%E9%99%86 HTTP/1.1" 200 91
+INFO 2019-10-21 11:39:20,805 basehttp 124 "GET /api/index?name=%E9%99%86 HTTP/1.1" 200 91
+INFO 2019-10-21 11:39:44,268 basehttp 124 "GET /api/index?user=%E9%99%86 HTTP/1.1" 200 955
+INFO 2019-10-21 11:59:50,214 basehttp 124 "GET /api/index?user=%E9%99%86 HTTP/1.1" 200 955
+INFO 2019-10-21 12:51:51,477 basehttp 124 "GET /api/index?user=boss HTTP/1.1" 200 350
+INFO 2019-10-21 12:52:33,602 basehttp 124 "GET /api/index?user=boss HTTP/1.1" 200 350
+INFO 2019-10-21 13:04:34,389 basehttp 124 "GET /api/index?user=boss HTTP/1.1" 200 350
+INFO 2019-10-21 13:05:30,471 basehttp 124 "GET /api/index?user=boss HTTP/1.1" 200 380
+INFO 2019-10-21 13:33:58,799 basehttp 124 "GET /api/index?user=boss HTTP/1.1" 200 380
+INFO 2019-10-21 13:34:19,530 basehttp 124 "GET /api/index?user=boss HTTP/1.1" 200 380
+ERROR 2019-10-21 14:05:44,799 exception 135 Internal Server Error: /api/index
+Traceback (most recent call last):
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\env\gurui\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\env\gurui\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\gurui\reports\reports\apps\sailsoft\views.py", line 24, in get
+    print(request.data.user)
+AttributeError: 'WSGIRequest' object has no attribute 'data'
+ERROR 2019-10-21 14:05:46,544 basehttp 124 "GET /api/index?user=boss HTTP/1.1" 500 78506
+ERROR 2019-10-21 14:20:13,050 exception 135 Internal Server Error: /api/index
+Traceback (most recent call last):
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\env\gurui\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\env\gurui\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\gurui\reports\reports\apps\sailsoft\views.py", line 24, in get
+    print(request.data.user)
+AttributeError: 'WSGIRequest' object has no attribute 'data'
+ERROR 2019-10-21 14:20:13,325 basehttp 124 "GET /api/index?user=boss HTTP/1.1" 500 78792
+ERROR 2019-10-21 14:21:03,035 exception 135 Internal Server Error: /api/index
+Traceback (most recent call last):
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\env\gurui\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\env\gurui\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\gurui\reports\reports\apps\sailsoft\views.py", line 24, in get
+    print(request.query_params)
+AttributeError: 'WSGIRequest' object has no attribute 'query_params'
+ERROR 2019-10-21 14:21:03,173 basehttp 124 "GET /api/index?user=boss HTTP/1.1" 500 78830
+INFO 2019-10-21 14:24:51,733 basehttp 124 "GET /api/index?user=boss HTTP/1.1" 200 380
+INFO 2019-10-21 14:25:53,981 basehttp 124 "GET /api/index?user=boss HTTP/1.1" 200 380
+ERROR 2019-10-21 14:26:17,468 exception 135 Internal Server Error: /api/index
+Traceback (most recent call last):
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\env\gurui\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\env\gurui\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\env\gurui\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\env\gurui\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\env\gurui\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\env\gurui\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\gurui\reports\reports\apps\sailsoft\views.py", line 25, in get
+    print(request.query_params.user)
+AttributeError: 'QueryDict' object has no attribute 'user'
+ERROR 2019-10-21 14:26:17,677 basehttp 124 "GET /api/index?user=boss HTTP/1.1" 500 95386
+INFO 2019-10-21 14:26:41,128 basehttp 124 "GET /api/index?user=boss HTTP/1.1" 200 380
+INFO 2019-10-21 14:27:00,819 basehttp 124 "GET /api/index?user=boss HTTP/1.1" 200 380
+ERROR 2019-10-21 14:31:08,651 exception 135 Internal Server Error: /api/index
+Traceback (most recent call last):
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\base.py", line 215, in _get_response
+    response = response.render()
+  File "D:\env\gurui\lib\site-packages\django\template\response.py", line 107, in render
+    self.content = self.rendered_content
+  File "D:\env\gurui\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "D:\env\gurui\lib\site-packages\rest_framework\renderers.py", line 724, in render
+    template = loader.get_template(self.template)
+  File "D:\env\gurui\lib\site-packages\django\template\loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: rest_framework/api.html
+ERROR 2019-10-21 14:31:08,797 basehttp 124 "GET /api/index?user=boss HTTP/1.1" 500 85164
+INFO 2019-10-21 14:32:34,849 basehttp 124 "GET /api/index?user=boss HTTP/1.1" 200 380
+WARNING 2019-10-21 14:40:42,587 basehttp 124 "POST /api/index HTTP/1.1" 405 41
+WARNING 2019-10-21 14:42:00,498 basehttp 124 "POST /api/index1 HTTP/1.1" 405 41
+WARNING 2019-10-21 14:42:24,033 basehttp 124 "POST /api/index1 HTTP/1.1" 405 41
+WARNING 2019-10-21 14:43:26,335 basehttp 124 "POST /api/index1 HTTP/1.1" 405 41
+ERROR 2019-10-21 14:44:01,809 exception 135 Internal Server Error: /api/index1
+Traceback (most recent call last):
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\env\gurui\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\env\gurui\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\env\gurui\lib\site-packages\rest_framework\views.py", line 507, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "D:\env\gurui\lib\site-packages\rest_framework\views.py", line 422, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2019-10-21 14:44:02,115 basehttp 124 "POST /api/index1 HTTP/1.1" 500 82198
+WARNING 2019-10-21 14:44:06,969 base 152 Not Found: /api/index1/
+WARNING 2019-10-21 14:44:06,970 basehttp 124 "POST /api/index1/ HTTP/1.1" 404 2281
+WARNING 2019-10-21 14:44:08,613 base 152 Not Found: /api/index1/
+WARNING 2019-10-21 14:44:08,614 basehttp 124 "POST /api/index1/ HTTP/1.1" 404 2281
+ERROR 2019-10-21 14:44:19,249 exception 135 Internal Server Error: /api/index1
+Traceback (most recent call last):
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\env\gurui\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\env\gurui\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\env\gurui\lib\site-packages\rest_framework\views.py", line 507, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "D:\env\gurui\lib\site-packages\rest_framework\views.py", line 422, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2019-10-21 14:44:19,297 basehttp 124 "POST /api/index1 HTTP/1.1" 500 82199
+ERROR 2019-10-21 14:45:01,795 exception 135 Internal Server Error: /api/index1
+Traceback (most recent call last):
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\env\gurui\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\env\gurui\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\env\gurui\lib\site-packages\rest_framework\views.py", line 507, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "D:\env\gurui\lib\site-packages\rest_framework\views.py", line 422, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2019-10-21 14:45:01,955 basehttp 124 "POST /api/index1 HTTP/1.1" 500 82198
+ERROR 2019-10-21 14:45:32,721 exception 135 Internal Server Error: /api/index1
+Traceback (most recent call last):
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\env\gurui\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\env\gurui\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\env\gurui\lib\site-packages\rest_framework\views.py", line 507, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "D:\env\gurui\lib\site-packages\rest_framework\views.py", line 422, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2019-10-21 14:45:32,830 basehttp 124 "POST /api/index1 HTTP/1.1" 500 82199
+ERROR 2019-10-21 14:46:56,466 exception 135 Internal Server Error: /api/index1
+Traceback (most recent call last):
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\env\gurui\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\env\gurui\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\env\gurui\lib\site-packages\rest_framework\views.py", line 507, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "D:\env\gurui\lib\site-packages\rest_framework\views.py", line 422, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2019-10-21 14:47:03,645 basehttp 124 "POST /api/index1 HTTP/1.1" 500 83699
+INFO 2019-10-21 14:47:51,751 basehttp 124 "POST /api/index1 HTTP/1.1" 200 8
+INFO 2019-10-21 14:48:48,556 basehttp 124 "POST /api/index1 HTTP/1.1" 200 8
+ERROR 2019-10-21 14:50:24,204 exception 135 Internal Server Error: /api/index1
+Traceback (most recent call last):
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\env\gurui\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\env\gurui\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\env\gurui\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\env\gurui\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\env\gurui\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\env\gurui\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\gurui\reports\reports\apps\sailsoft\views.py", line 54, in post
+    print(request.data.user)
+AttributeError: 'QueryDict' object has no attribute 'user'
+ERROR 2019-10-21 14:50:24,317 basehttp 124 "POST /api/index1 HTTP/1.1" 500 16982
+INFO 2019-10-21 14:50:43,105 basehttp 124 "POST /api/index1 HTTP/1.1" 200 8
+ERROR 2019-10-21 15:01:43,835 exception 135 Internal Server Error: /api/index1
+Traceback (most recent call last):
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\base.py", line 215, in _get_response
+    response = response.render()
+  File "D:\env\gurui\lib\site-packages\django\template\response.py", line 107, in render
+    self.content = self.rendered_content
+  File "D:\env\gurui\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "D:\env\gurui\lib\site-packages\rest_framework\renderers.py", line 724, in render
+    template = loader.get_template(self.template)
+  File "D:\env\gurui\lib\site-packages\django\template\loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: rest_framework/api.html
+ERROR 2019-10-21 15:01:43,993 basehttp 124 "GET /api/index1?user=boss HTTP/1.1" 500 84647
+ERROR 2019-10-21 15:02:24,635 exception 135 Internal Server Error: /api/index1
+Traceback (most recent call last):
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\base.py", line 215, in _get_response
+    response = response.render()
+  File "D:\env\gurui\lib\site-packages\django\template\response.py", line 107, in render
+    self.content = self.rendered_content
+  File "D:\env\gurui\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "D:\env\gurui\lib\site-packages\rest_framework\renderers.py", line 724, in render
+    template = loader.get_template(self.template)
+  File "D:\env\gurui\lib\site-packages\django\template\loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: rest_framework/api.html
+ERROR 2019-10-21 15:02:24,796 basehttp 124 "GET /api/index1?user=boss HTTP/1.1" 500 84782
+INFO 2019-10-21 15:03:12,105 basehttp 124 "POST /api/index1 HTTP/1.1" 200 8
+ERROR 2019-10-21 15:04:04,386 exception 135 Internal Server Error: /api/index1
+Traceback (most recent call last):
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\base.py", line 215, in _get_response
+    response = response.render()
+  File "D:\env\gurui\lib\site-packages\django\template\response.py", line 107, in render
+    self.content = self.rendered_content
+  File "D:\env\gurui\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "D:\env\gurui\lib\site-packages\rest_framework\renderers.py", line 724, in render
+    template = loader.get_template(self.template)
+  File "D:\env\gurui\lib\site-packages\django\template\loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: rest_framework/api.html
+ERROR 2019-10-21 15:04:04,531 basehttp 124 "GET /api/index1?user=boss HTTP/1.1" 500 84783
+INFO 2019-10-21 15:04:13,078 basehttp 124 "GET /api/index?user=boss HTTP/1.1" 200 380
