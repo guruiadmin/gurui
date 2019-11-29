@@ -298,3 +298,41 @@ Traceback (most recent call last):
 django.template.exceptions.TemplateDoesNotExist: rest_framework/api.html
 ERROR 2019-10-21 15:04:04,531 basehttp 124 "GET /api/index1?user=boss HTTP/1.1" 500 84783
 INFO 2019-10-21 15:04:13,078 basehttp 124 "GET /api/index?user=boss HTTP/1.1" 200 380
+WARNING 2019-10-26 23:22:57,335 base 152 Not Found: /
+WARNING 2019-10-26 23:22:57,338 basehttp 124 "GET / HTTP/1.1" 404 2017
+WARNING 2019-10-26 23:22:57,444 base 152 Not Found: /favicon.ico
+WARNING 2019-10-26 23:22:57,445 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2068
+ERROR 2019-10-26 23:23:06,087 exception 135 Internal Server Error: /api/index
+Traceback (most recent call last):
+  File "D:\env\gurui\lib\site-packages\django\utils\datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'user'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\env\gurui\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\env\gurui\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\env\gurui\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\env\gurui\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\env\gurui\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\env\gurui\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\env\gurui\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\gurui\reports\reports\apps\sailsoft\views.py", line 26, in get
+    print(request.query_params['user'])
+  File "D:\env\gurui\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'user'"
+ERROR 2019-10-26 23:23:09,780 basehttp 124 "GET /api/index HTTP/1.1" 500 102810
+INFO 2019-10-26 23:24:38,019 basehttp 124 "GET /api/index HTTP/1.1" 200 380

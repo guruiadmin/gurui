@@ -10,7 +10,6 @@
 from django.db import connections
 from django.http import HttpResponse
 import json
-from django.views import View
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework import status
@@ -21,11 +20,10 @@ from reports.utils.response_code import RET
 class GuRui(APIView):
 
     def get(self, request):
-        name = request.GET.get('user')
+        # name = request.GET.get('user')
+        name = 'BOSS'
         cursor = connections['default'].cursor()
         # 模糊查询返回用户地址，名字
-        print(request.query_params['user'])
-        print(request.data)
         try:
             cursor.execute(
                 "select name,id from jld_user where name LIKE '%" + name + "%'"
