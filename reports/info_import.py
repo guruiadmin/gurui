@@ -86,5 +86,53 @@ for sheet_name in sheet_names:
                 sql = "INSERT INTO clinic(clinic_id,group_name, name,create_time) VALUES ('{}','{}','{}','{}')".format(uuid.uuid1(),rows[3].split('-')[1], rows[3].split('-')[2], crate_time)
                 cursor.execute(sql)
                 db.commit()
+        if not rows[1]:
+            rows[1] = ''
+            cursor.execute("select name from user WHERE name = '" + rows[0] + "'")
+            sql1 = cursor.fetchall()
+            if not sql1:
+                cursor.execute("select docker_id from doctor WHERE name = '" + rows[4] + "'")
+                docker_id = cursor.fetchall()
+                if not docker_id:
+                    docker_id = (('',),)
+                cursor.execute("select pm_id from reception_pm WHERE name = '" + rows[3] + "'")
+                pm_id = cursor.fetchall()
+                if not pm_id:
+                    pm_id = (('',),)
+
+                sql = "INSERT INTO user(userid, name, create_time,docker_id,pm_id) VALUES ('{}','{}','{}','{}','{}')".format(rows[1], rows[0], func(rows[2]), docker_id[0][0],pm_id[0][0])
+                cursor.execute(sql)
+                db.commit()
+        cursor.execute("select userid from user_therapy WHERE userid = '" + rows[0] + "'")
+        sql1 = cursor.fetchall()
+        if not sql1:
+            if rows[6] == "c.洗牙":
+                sql = "INSERT INTO user_therapy(userid, s_cxya) VALUES ('{}','{}')".format(rows[1], 1)
+                cursor.execute(sql)
+                db.commit()
+            if rows[6] == "a种植":
+                sql = "INSERT INTO user_therapy(userid, s_azzhi) VALUES ('{}','{}')".format(rows[1], 1)
+                cursor.execute(sql)
+                db.commit()
+            if rows[6] == "a正畸":
+                sql = "INSERT INTO user_therapy(userid, s_azji) VALUES ('{}','{}')".format(rows[1], 1)
+                cursor.execute(sql)
+                db.commit()
+            if rows[6] == "b.牙周":
+                sql = "INSERT INTO user_therapy(userid, s_byzhou) VALUES ('{}','{}')".format(rows[1], 1)
+                cursor.execute(sql)
+                db.commit()
+            if rows[6] == "a美学贴面":
+                sql = "INSERT INTO user_therapy(userid, s_amxue) VALUES ('{}','{}')".format(rows[1], 1)
+                cursor.execute(sql)
+                db.commit()
+            if rows[6] == "c.儿牙":
+                sql = "INSERT INTO user_therapy(userid, s_ceya) VALUES ('{}','{}')".format(rows[1], 1)
+                cursor.execute(sql)
+                db.commit()
+            if rows[6] == "b.补牙":
+                sql = "INSERT INTO user_therapy(userid, s_bbuya) VALUES ('{}','{}')".format(rows[1], 1)
+                cursor.execute(sql)
+                db.commit()
 
 
