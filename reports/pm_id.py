@@ -1,8 +1,6 @@
 from datetime import datetime
-
 import requests
 import json
-import time
 import xlrd
 import time
 from xlrd import open_workbook # xlrd用于读取xld
@@ -106,25 +104,7 @@ if __name__ == '__main__':
     })
 
     # 获取所有表单数据
+    setlist = set()
     form_data = api.get_all_data([], {})
     for v in form_data:
-        # cursor.execute("select name from user WHERE userid = '" + v['_widget_1568908048667'] + "'")
-        # sql1 = cursor.fetchall()
-        # if not sql1:
-        #     cursor.execute("select docker_id from doctor WHERE name = '" + v['_widget_1569164862566']['name'] + "'")
-        #     docker_id = cursor.fetchall()
-        #     if not docker_id:
-        #         docker_id = (('',),)
-        #     cursor.execute("select pm_id from reception_pm WHERE name = '" + v['_widget_1569164862538']['name'] + "'")
-        #     pm_id = cursor.fetchall()
-        #     if not pm_id:
-        #         pm_id = (('',),)
-        #     sql = "INSERT INTO user(userid, name, create_time,docker_id,pm_id) VALUES ('{}','{}','{}','{}','{}')".format(v['_widget_1568908048667'],v['_widget_1566487961449'], func(v['_widget_1566487961562']), v['_widget_1569164862566']['name'], v['_widget_1569164862538']['name'])
-
-        cursor.execute("select userid from user_therapy WHERE userid = '" + v['_widget_1568908048667'] + "'")
-        sql1 = cursor.fetchall()
-        if not sql1:
-            sql = "INSERT INTO user_therapy(userid) VALUES ('{}')".format(v['_widget_1568908048667'])
-            cursor.execute(sql)
-            # 提交事务
-            db.commit()
+        print(v)

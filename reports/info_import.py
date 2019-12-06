@@ -14,7 +14,11 @@ cursor = db.cursor()
 crate_time = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))
 sheet1= workbook.sheet_by_name('员工信息表1')  # 根据sheet名称读取sheet中的所有内容
 # print(sheet.nrows)  # sheet的名称、行数、列数
+from datetime import datetime
 
+def func(data):
+    date_ = datetime.strptime(data,"%Y-%m-%dT%H:%M:%S.%fZ")
+    return date_
 
 for sheet_name in sheet_names:
     sheet2 = worksheet.sheet_by_name(sheet_name)
