@@ -7,8 +7,9 @@ import MySQLdb
 accessID = "LTAI4FvgoPWA1Sgiq348gmWJ"
 accessKey = "6GS84UOhugMu8es6q2WJN6OZl55Vh5"
 # endpoint = "oss-cn-qingdao-internal.aliyuncs.com"
-endpoint = "oss-cn-qingdao.aliyuncs.com"
-bucketName = "idso"
+# endpoint = "oss-cn-qingdao.aliyuncs.com"
+endpoint = "image.oss-cn-qingdao.aliyuncs.com"
+bucketName = "idso-image"
 
 # 创建oss链接
 # auth = oss2.Auth(accessID, accessKey)

@@ -1,9 +1,7 @@
 package controllers
 
-import "github.com/astaxie/beego"
-
 type IndexController struct {
-	beego.Controller
+	BaseControllers
 }
 
 //@router / [get]
@@ -13,6 +11,7 @@ func (this *IndexController) Index(){
 
 //@router /message [get]
 func (this *IndexController) IndexMessage(){
+	this.Abort("404")
 	this.TplName = "message.html"
 }
 
@@ -21,3 +20,9 @@ func (this *IndexController) IndexMessage(){
 func (this *IndexController) IndexAbout(){
 	this.TplName = "about.html"
 }
+
+//@router /user [get]
+func (this *IndexController) GetUser(){
+	this.TplName = "user.html"
+}
+

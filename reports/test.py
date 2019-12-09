@@ -7,7 +7,7 @@ import MySQLdb
 accessID = "LTAI4FvgoPWA1Sgiq348gmWJ"
 accessKey = "6GS84UOhugMu8es6q2WJN6OZl55Vh5"
 endpoint = "oss-cn-qingdao.aliyuncs.com"
-bucketName = "idso"
+bucketName = "idso-image"
 
 # 创建oss链接
 auth = oss2.Auth(accessID, accessKey)
@@ -28,7 +28,7 @@ def get_image(data):
             file_path = data['_widget_1568908048667']+'intraoral' +str(key) + ".jpg"
             try:
                 # 上传oss
-                bucket.put_object("idso" + file_path, response)
+                bucket.put_object(file_path, response)
             except Exception as e:
                 print(e)
             cursor.execute("select intraoral from user_therapy where userid = '"+data['_widget_1568908048667']+"'")
