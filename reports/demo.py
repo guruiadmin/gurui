@@ -11,10 +11,10 @@ def func(data):
     date_ = datetime.strptime(data,"%Y-%m-%dT%H:%M:%S.%fZ")
     return date_
 
-workbook = open_workbook(r'C:\Users\zl\Downloads\合颌科技(北京)有限公司-通讯录.xlsx')  # 打开xls文件
-worksheet = xlrd.open_workbook(r'C:\Users\zl\Downloads\合颌科技(北京)有限公司-通讯录.xlsx')
-sheet_names= worksheet.sheet_names()
-sheet = workbook.sheet_by_index(0)  # 根据sheet索引读取sheet中的所有内容
+# workbook = open_workbook(r'C:\Users\zl\Downloads\合颌科技(北京)有限公司-通讯录.xlsx')  # 打开xls文件
+# worksheet = xlrd.open_workbook(r'C:\Users\zl\Downloads\合颌科技(北京)有限公司-通讯录.xlsx')
+# sheet_names= worksheet.sheet_names()
+# sheet = workbook.sheet_by_index(0)  # 根据sheet索引读取sheet中的所有内容
 
 db = MySQLdb.connect("47.104.159.115", "root", "Gurui190916", "dev", charset='utf8' )
 cursor = db.cursor()
@@ -108,6 +108,7 @@ if __name__ == '__main__':
     # 获取所有表单数据
     form_data = api.get_all_data([], {})
     for v in form_data:
+        print(v)
         # cursor.execute("select name from user WHERE userid = '" + v['_widget_1568908048667'] + "'")
         # sql1 = cursor.fetchall()
         # if not sql1:
@@ -121,10 +122,10 @@ if __name__ == '__main__':
         #         pm_id = (('',),)
         #     sql = "INSERT INTO user(userid, name, create_time,docker_id,pm_id) VALUES ('{}','{}','{}','{}','{}')".format(v['_widget_1568908048667'],v['_widget_1566487961449'], func(v['_widget_1566487961562']), v['_widget_1569164862566']['name'], v['_widget_1569164862538']['name'])
 
-        cursor.execute("select userid from user_therapy WHERE userid = '" + v['_widget_1568908048667'] + "'")
-        sql1 = cursor.fetchall()
-        if not sql1:
-            sql = "INSERT INTO user_therapy(userid) VALUES ('{}')".format(v['_widget_1568908048667'])
-            cursor.execute(sql)
-            # 提交事务
-            db.commit()
+        # cursor.execute("select userid from user_therapy WHERE userid = '" + v['_widget_1568908048667'] + "'")
+        # sql1 = cursor.fetchall()
+        # if not sql1:
+        #     sql = "INSERT INTO user_therapy(userid) VALUES ('{}')".format(v['_widget_1568908048667'])
+        #     cursor.execute(sql)
+        #     # 提交事务
+        #     db.commit()
