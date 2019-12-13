@@ -10,3 +10,6 @@ func init(){
 	orm.RegisterDataBase("default", "mysql", "root:mingjingtai123@tcp(47.94.102.108:3306)/dev?charset=utf8")
 
 }
+
+
+

@@ -58,8 +58,11 @@ class OrgOrder(object):
         try:
             buyorder = PurchaseOrder.objects.values('manager_id').filter(pay_time__range=(self.manage['startTime'], self.manage['endTime']), pay_state='1', order_state='1').annotate(count=Count('order_number')).annotate(money=Sum('actual_price'))
             takeorder = TakeOrder.objects.values('manager_id').exclude(order_state='1').filter(create_date__range=(self.manage['startTime'], self.manage['endTime']), order_state='0', take_state__in=[0, 1, 2, 3]).annotate(count=Count('order_number'))
+			
         except PurchaseOrder.DoesNotExist:
             return HttpResponse(status=404)
+		print()
+		print()
         return HttpResponse(json.dumps(ormfunc.buytake(takeorder, buyorder, merchant(), self.manage['pages'], self.manage['numberbars'])), content_type="application/json")
 
 

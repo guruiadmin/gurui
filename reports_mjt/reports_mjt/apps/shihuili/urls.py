@@ -14,7 +14,6 @@ urlpatterns = [
     url(r'reports$', reportsa.Organization.as_view()),#shops路径
 ]
 # # 定义视图集的路由
-router = DefaultRouter()
-router.register(r'finance', finance.FinanceClass, base_name='manage')
+#router.register(r'finance', finance.FinanceClass, base_name='manage')
 # 将视图集的路由添加到urlpatterns
-urlpatterns += router.urls
+#urlpatterns += router.urls
