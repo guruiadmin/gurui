@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>管理员登录-河南省乾元水资源开发利用有限公司</title>
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="/static/css/font.css">
+    <link rel="stylesheet" href="/static/css/weadmin.css">
+    <script src="/static/lib/layui/layui.js" charset="utf-8"></script>
+
+</head>
+<body class="login-bg">
+
+<div class="login">
+    <div class="message">官网-管理登录</div>
+    <div id="darkbannerwrap"></div>
+
+    <form method="post" class="layui-form">
+        <input name="username" id="username" placeholder="用户名" type="text" lay-verify="required" class="layui-input">
+        <hr class="hr15">
+        <input name="password" id="password" lay-verify="required" placeholder="密码" type="password" class="layui-input">
+        <hr class="hr15">
+        <input class="loginin" value="登录" style="width:100%;" type="button">
+    </form>
+</div>
+
+<script type="text/javascript">
+
+    layui.config({
+        base: '/static/js/'
+        , version: '101100'
+    }).use('admin');
+    layui.use(['jquery', 'admin'], function () {
+        var $ = layui.jquery;
+        $(".loginin").click(function () {
+            $.post("/login", JSON.stringify({
+                Username: $("#username").val(),
+                Password: $("#password").val(),
+            }), function (data) {
+                console.log(data)
+                if (data.code != 0) {
+                    alert(data.msg)
+                    return
+                }
+                window.location.href = "/"
+                return
+            })
+        })
+    });
+</script>
+<!-- 底部结束 -->
+</body>
+</html>

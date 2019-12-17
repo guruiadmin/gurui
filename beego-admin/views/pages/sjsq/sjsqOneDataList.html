@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>公司内容管理-公司内容</title>
+    <meta name="Description" content="基于layUI数据表格操作"/>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="/static/css/font.css">
+    <link rel="stylesheet" href="/static/css/weadmin.css">
+    <!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+    <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+        .layui-form-switch em {
+            width: 40px;
+        }
+
+        body {
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+<div class="weadmin-nav">
+			<span class="layui-breadcrumb">
+        <a href="javascript:;">首页</a>
+        <a href="javascript:;">公司内容管理</a>
+        <a>
+          <cite>公司内容</cite></a>
+      </span>
+
+    <a class="layui-btn layui-btn-sm" style="line-height:1.6em;margin-top:3px;float:right"
+       href="javascript:location.replace(location.href);" title="刷新">
+        <i class="layui-icon" style="line-height:30px">&#xe666;</i></a>
+    <a class="layui-btn layui-btn-sm" style="line-height:1.6em;margin-top:3px;float:right"
+       href="javascript:history.go(-1);" title="返回上一级">
+        <i class="layui-icon" style="line-height:30px">&#xe65c;</i></a>
+</div>
+<div class="weadmin-body">
+    <div class="layui-row">
+        <form class="layui-form layui-col-md12 we-search">
+            标题名称：
+            <div class="layui-inline">
+                <input type="text" name="title" id="title" placeholder="请输入标题关键字" autocomplete="off"
+                       class="layui-input">
+            </div>
+            审核状态：
+                <div class="layui-inline">
+                    <select name="modules" id="review" lay-verify="required" lay-search="">
+                        <option value="">直接选择或搜索选择</option>
+                        <option value="0">待审核</option>
+                        <option value="1">审核未通过</option>
+                        <option value="2">审核通过</option>
+                    </select>
+                </div>
+            <button class="layui-btn search" type="button"><i class="layui-icon">&#xe615;</i></button>
+        </form>
+    </div>
+    <div class="weadmin-block demoTable">
+        <button class="layui-btn add"><i class="layui-icon">&#xe61f;</i>添加
+        </button>
+    </div>
+    <table class="layui-hide" id="articleList" lay-filter="articleList"></table>
+
+    <script type="text/html" id="operateTpl">
+        <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+    </script>
+
+    <script src="/static/lib/layui/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+        layui.extend({
+            admin: '/static/js/admin'
+        });
+
+        layui.use(['table', 'jquery', 'form', 'admin'], function () {
+            var table = layui.table,
+                $ = layui.jquery,
+                form = layui.form
+
+            /* 添加按钮执行事件 */
+            $(".add").click(function () {
+                window.location.href = "/sjsq/sjsqlistadd"
+            })
+
+            /* 监听工具栏 */
+            table.on('tool(articleList)', function(obj){
+                var data = obj.data;
+                if(obj.event === 'edit'){
+                    window.location.href = "/sjsq/sjsqlistup/" + data.Id
+                }
+            });
+
+            //监听是否启用操作
+            form.on('checkbox(enable)', function (obj) {
+                console.log(this.value + ' ' + this.name + '：' + obj.elem.checked, obj.othis);
+            });
+
+            /* 加载数据 */
+            tableData(table, $)
+
+            /* 搜索按钮点击事件 */
+            $(".search").click(function () {
+                tableData(table, $)
+            })
+
+        });
+
+        function tableData(table, $) {
+            table.render({
+                elem: '#articleList',
+                cellMinWidth: 80,
+                url: '/sjsq/sjsqdata',
+                where: {
+                    title: $("#title").val(),
+                    review: $("#review").val()
+                },
+                cols: [
+                    [{
+                        type: 'checkbox'
+                    }, {
+                        field: 'Id', title: 'ID', sort: true
+                    }, {
+                        field: 'Title', title: '标题'
+                    }, {
+                        field: 'Description', title: '介绍'
+                    }, {
+                        field: 'Status', title: '启用', templet: function (val) {
+                            if (val.Status == 0) {
+                                return '<input type="checkbox" class="enable" name="enable" value="0" title="启用" lay-filter="enable" checked>'
+                            }
+                            return '<input type="checkbox" class="enable" name="enable" value="1" title="启用" lay-filter="enable">'
+                        }
+                    }, {
+                        field: 'Review', title: '状态', templet: function (val) {
+                            if (val.Review == 0) {
+                                return '<a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">待审核</a>'
+                            }else if(val.Review == 1){
+                                return '<a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">未通过</a>'
+                            }
+                            return '<a class="layui-btn layui-btn-xs" lay-event="edit">审核通过</a>'
+                        }
+                    }, {
+                        field: 'Username', title: '最后修改用户'
+                    }, {
+                        field: 'Updated', title: '最后修改时间', templet: function (val) {
+                            return val.Updated
+                        }
+                    }, {
+                        field: 'operate', title: '操作', toolbar: '#operateTpl', unresize: true
+                    }]
+                ],
+                event: true,
+                page: true,
+                id: 'articleList'
+            });
+        }
+    </script>
+</div>
+</body>
+</html>

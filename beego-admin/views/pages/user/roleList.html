@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户管理-平台权限管理</title>
+    <meta name="Description" content="基于layUI数据表格操作"/>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="/static/css/font.css">
+    <link rel="stylesheet" href="/static/css/weadmin.css">
+    <!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+    <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+        .layui-form-switch em {
+            width: 40px;
+        }
+
+        body {
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+<div class="weadmin-nav">
+			<span class="layui-breadcrumb">
+        <a href="javascript:;">首页</a>
+        <a href="javascript:;">用户管理</a>
+        <a>
+          <cite>平台权限管理</cite></a>
+      </span>
+    <a class="layui-btn layui-btn-sm" style="line-height:1.6em;margin-top:3px;float:right"
+       href="javascript:location.replace(location.href);" title="刷新">
+        <i class="layui-icon" style="line-height:30px">&#x1002;</i></a>
+</div>
+<div class="weadmin-body">
+    <div class="layui-row">
+        <form class="layui-form layui-col-md12 we-search">
+            一级菜单搜索：
+            <div class="layui-inline">
+                <input type="text" name="name" id="name" placeholder="请输入角色名称关键字" autocomplete="off"
+                       class="layui-input">
+            </div>
+            <button class="layui-btn search" type="button"><i class="layui-icon">&#xe615;</i></button>
+        </form>
+    </div>
+    <div class="weadmin-block demoTable">
+        <button class="layui-btn layui-btn-danger del"><i class="layui-icon">&#xe640;</i>批量删除</button>
+        <button class="layui-btn" onclick="WeAdminShow('添加平台角色','/user/rolelistadd',600,400)"><i class="layui-icon">&#xe61f;</i>添加
+        </button>
+    </div>
+    <table class="layui-hide" id="articleList"></table>
+
+    <script type="text/html" id="operateTpl">
+    </script>
+    <script src="/static/lib/layui/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+        layui.extend({
+            admin: '/static/js/admin'
+        });
+
+        layui.use(['table', 'jquery', 'form', 'admin'], function () {
+            var table = layui.table,
+                $ = layui.jquery
+
+            tableData(table, $)
+
+            $(".search").click(function () {
+                tableData(table, $)
+            })
+
+            $(".del").click(function () {
+                var checkStatus = table.checkStatus('articleList'),
+                    data = checkStatus.data
+
+                var ids = []
+                for(v in data){
+                    ids.push(data[v].Id)
+                }
+
+                layer.confirm('确认要删除吗？', function () {
+                    $.ajax({
+                        url : '/user/rolelistdelete',
+                        type : "post",
+                        dataType : "json",
+                        data : JSON.stringify({
+                            ids: ids
+                        }),
+                        contentType: 'application/json;charset=UTF-8',
+                        cache : false,
+                        async : true,
+                        success : function(data) {
+                            console.log(data)
+                        },
+                        error : function() {
+                            alert("出错了！")
+                        }
+                    });
+
+                    layer.msg('删除成功', {
+                        icon: 1
+                    });
+                    tableData(table, $)
+                });
+            })
+        });
+
+        function tableData(table, $) {
+            table.render({
+                elem: '#articleList',
+                cellMinWidth: 80,
+                url: '/user/roledata',
+                where: {
+                    name: $("#name").val()
+                },
+                cols: [
+                    [{
+                        type: 'checkbox'
+                    }, {
+                        field: 'Id', title: 'ID', sort: true
+                    }, {
+                        field: 'Name', title: '角色名'
+                    }, {
+                        field: 'Description', title: '说明'
+                    }, {
+                        field: 'Status', title: '启用', templet: function (val) {
+                            if (val.Status == 0) {
+                                return '<input type="checkbox" name="enable" value="0" title="启用" lay-filter="enable" checked>'
+                            }
+                            return '<input type="checkbox" name="enable" value="1" title="启用" lay-filter="enable">'
+                        }, unresize: true
+                    }, {
+                        field: 'Ones', title: '对应菜单', templet: function (val) {
+                            var data = "";
+                            for (v in val.Ones) {
+                                data += val.Ones[v].Title + "，"
+                            }
+                            return data
+                        }
+                    }, {
+                        field: 'operate', title: '操作', toolbar: '#operateTpl', unresize: true
+                    }]
+                ],
+                event: true,
+                page: true,
+                id: 'articleList'
+            });
+        }
+    </script>
+</div>
+</body>
+</html>

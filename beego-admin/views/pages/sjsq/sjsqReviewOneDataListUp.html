@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>公司内容审核</title>
+    <meta name="Description" content="基于layUI数据表格操作"/>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="/static/css/font.css">
+    <link rel="stylesheet" href="/static/css/weadmin.css">
+    <!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+    <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+        .layui-form-switch em {
+            width: 40px;
+        }
+
+        body {
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+
+<div class="weadmin-nav">
+			<span class="layui-breadcrumb">
+        <a href="javascript:;">首页</a>
+        <a href="javascript:;">公司内容审核</a>
+        <a>
+          <cite>审核公司内容</cite></a>
+      </span>
+
+    <a class="layui-btn layui-btn-sm" style="line-height:1.6em;margin-top:3px;float:right"
+       href="javascript:location.replace(location.href);" title="刷新">
+        <i class="layui-icon" style="line-height:30px">&#xe666;</i></a>
+    <a class="layui-btn layui-btn-sm" style="line-height:1.6em;margin-top:3px;float:right"
+       href="javascript:history.go(-1);" title="返回上一级">
+        <i class="layui-icon" style="line-height:30px">&#xe65c;</i></a>
+
+</div>
+<div class="weadmin-body">
+    <form class="layui-form" action="" style="padding: 20px 0">
+        <div class="layui-form-item">
+            <label class="layui-form-label">标题</label>
+            <div class="layui-input-block" style="margin-right: 80px">
+                <input type="text" id="Title" lay-verify="title" autocomplete="off"
+                       placeholder="请输入标题"
+                       class="layui-input" value="[[[.oneData.Title]]]">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">介绍</label>
+            <div class="layui-input-block" style="margin-right: 80px">
+                <textarea id="Description" class="layui-textarea">[[[.oneData.Description]]]</textarea>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">内容</label>
+            <div class="layui-input-block" style="margin-right: 80px">
+                <textarea id="data" style="display: none;">[[[.oneData.Data]]]</textarea>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button type="button" class="layui-btn nomenu">未通过</button>
+                <button type="button" class="layui-btn yesmenu">审核通过</button>
+            </div>
+        </div>
+    </form>
+</div>
+<script src="/static/lib/layui/layui.js" charset="utf-8"></script>
+<script type="text/javascript" charset="utf-8">
+    layui.extend({
+        admin: '/static/js/admin'
+    });
+
+    layui.use(['table', 'layedit', 'jquery', 'form', 'admin'], function () {
+        var $ = layui.jquery, form = layui.form
+        var layedit = layui.layedit;
+        layedit.set({
+            uploadImage: {
+                url: '/file/addphoto'
+                , type: 'post'
+            }
+        });
+
+        var index = layedit.build('data'); //建立编辑器
+
+        /* 审核通过 */
+        $(".yesmenu").click(function () {
+            $.ajax({
+                url: '/sjsq/sjsqlistupto',
+                type: "post",
+                dataType: "json",
+                data: JSON.stringify({
+                    id: parseInt('[[[.oneData.Id]]]'),
+                    Title: $("#Title").val(),
+                    Description: $("#Description").val(),
+                    Data: layedit.getContent(index),
+                    Review: 2
+                }),
+                contentType: 'application/json;charset=UTF-8',
+                cache: false,
+                async: true,
+                success: function (data) {
+                    if (data.code == 0) {
+                        layer.msg(data.msg, {
+                            icon: 1,
+                            time: 1000,
+                        });
+                        $(".yesmenu").remove()
+                        $(".nomenu").remove()
+                        return
+                    }
+                    layer.msg(data.msg, {
+                        icon: 2,
+                        time: 1000,
+                    });
+                },
+                error: function () {
+                    alert("出错了！")
+                }
+            });
+        })
+
+        /* 审核未通过 */
+        $(".nomenu").click(function () {
+            $.ajax({
+                url: '/sjsq/sjsqlistupto',
+                type: "post",
+                dataType: "json",
+                data: JSON.stringify({
+                    id: parseInt('[[[.oneData.Id]]]'),
+                    Title: $("#Title").val(),
+                    Description: $("#Description").val(),
+                    Data: layedit.getContent(index),
+                    Review: 1
+                }),
+                contentType: 'application/json;charset=UTF-8',
+                cache: false,
+                async: true,
+                success: function (data) {
+                    if (data.code == 0) {
+                        layer.msg(data.msg, {
+                            icon: 1,
+                            time: 1000,
+                        });
+                        $(".yesmenu").remove()
+                        $(".nomenu").remove()
+                        return
+                    }
+                    layer.msg(data.msg, {
+                        icon: 2,
+                        time: 1000,
+                    });
+                },
+                error: function () {
+                    alert("出错了！")
+                }
+            });
+        })
+    });
+</script>
+</body>
+</html>

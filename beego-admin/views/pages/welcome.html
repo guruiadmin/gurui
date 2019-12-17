@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎页面</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../static/css/font.css">
+    <link rel="stylesheet" href="../static/css/weadmin.css">
+
+
+</head>
+
+<body>
+<div class="weadmin-body">
+    <div class="layui-col-lg12 layui-collapse" style="border: none;">
+        <div class="layui-col-lg6 layui-col-md12">
+            <!--统计信息展示-->
+            <fieldset class="layui-elem-field" style="padding: 5px;">
+                <!--<legend>信息统计</legend>-->
+                <blockquote class="layui-elem-quote font16">系统介绍</blockquote>
+                <br>
+                <div class="">
+                    <p>后台管理系统，主要用来管理官网内容和日常维护官网。</p>
+                </div>
+                <br>
+                <blockquote class="layui-elem-quote font16">个人信息</blockquote>
+                <br>
+                <div class="">
+                    用户名称：[[[.user.Username]]]
+                    <br>
+                    拥有角色：
+                    [[[ range $el := .user.Roles]]]
+                    [[[$el.Name]]]
+                    角色说明：[[[$el.Description]]]。
+                    [[[end]]]
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="/static/lib/layui/layui.js" charset="utf-8"></script>
+<script type="text/javascript" charset="UTF-8">
+    layui.extend({
+        admin: '/static/js/admin',
+    });
+    layui.use(['jquery', 'element', 'util', 'admin', 'carousel'], function () {
+
+    });
+</script>
+
+</html>
