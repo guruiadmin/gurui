@@ -1,0 +1,435 @@
+2019/12/17 13:50:37.477 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 13:52:34.542 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 13:52:56.752 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 15:10:53.720 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 15:11:44.466 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 15:12:52.506 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 15:12:56.098 [E] [asm_amd64.s:573]  <QuerySeter> no row found
+2019/12/17 15:12:56.099 [C] [asm_amd64.s:573]  the request url is  /api
+2019/12/17 15:12:56.099 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/loggercontroller/goodsget.tpl
+2019/12/17 15:12:56.099 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:573
+2019/12/17 15:12:56.099 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/panic.go:502
+2019/12/17 15:12:56.099 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/template.go:75
+2019/12/17 15:12:56.099 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/controller.go:306
+2019/12/17 15:12:56.099 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/controller.go:257
+2019/12/17 15:12:56.099 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/controller.go:237
+2019/12/17 15:12:56.099 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/router.go:865
+2019/12/17 15:12:56.099 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:2694
+2019/12/17 15:12:56.099 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:1830
+2019/12/17 15:12:56.099 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:2361
+2019/12/17 15:12:56.099 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/12/17 15:13:10.864 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 15:13:29.908 [E] [asm_amd64.s:573]  <QuerySeter> no row found
+2019/12/17 15:13:29.908 [C] [asm_amd64.s:573]  the request url is  /api
+2019/12/17 15:13:29.908 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/loggercontroller/goodsget.tpl
+2019/12/17 15:13:29.908 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:573
+2019/12/17 15:13:29.908 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/panic.go:502
+2019/12/17 15:13:29.908 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/template.go:75
+2019/12/17 15:13:29.908 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/controller.go:306
+2019/12/17 15:13:29.908 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/controller.go:257
+2019/12/17 15:13:29.908 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/controller.go:237
+2019/12/17 15:13:29.908 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/router.go:865
+2019/12/17 15:13:29.908 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:2694
+2019/12/17 15:13:29.908 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:1830
+2019/12/17 15:13:29.908 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:2361
+2019/12/17 15:13:29.908 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/12/17 15:13:31.031 [E] [asm_amd64.s:573]  <QuerySeter> no row found
+2019/12/17 15:13:31.032 [C] [asm_amd64.s:573]  the request url is  /api
+2019/12/17 15:13:31.032 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/loggercontroller/goodsget.tpl
+2019/12/17 15:13:31.032 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:573
+2019/12/17 15:13:31.032 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/panic.go:502
+2019/12/17 15:13:31.032 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/template.go:75
+2019/12/17 15:13:31.032 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/controller.go:306
+2019/12/17 15:13:31.032 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/controller.go:257
+2019/12/17 15:13:31.032 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/controller.go:237
+2019/12/17 15:13:31.032 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/router.go:865
+2019/12/17 15:13:31.032 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:2694
+2019/12/17 15:13:31.032 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:1830
+2019/12/17 15:13:31.032 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:2361
+2019/12/17 15:13:31.032 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/12/17 15:14:20.191 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 15:14:23.765 [E] [asm_amd64.s:573]  <QuerySeter> no row found
+2019/12/17 15:14:23.765 [C] [asm_amd64.s:573]  the request url is  /api
+2019/12/17 15:14:23.765 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/loggercontroller/goodsget.tpl
+2019/12/17 15:14:23.765 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:573
+2019/12/17 15:14:23.765 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/panic.go:502
+2019/12/17 15:14:23.765 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/template.go:75
+2019/12/17 15:14:23.765 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/controller.go:306
+2019/12/17 15:14:23.765 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/controller.go:257
+2019/12/17 15:14:23.765 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/controller.go:237
+2019/12/17 15:14:23.765 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/router.go:865
+2019/12/17 15:14:23.765 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:2694
+2019/12/17 15:14:23.765 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:1830
+2019/12/17 15:14:23.765 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:2361
+2019/12/17 15:14:23.765 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/12/17 15:15:25.193 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 15:15:30.661 [E] [asm_amd64.s:573]  <QuerySeter> no row found
+2019/12/17 15:15:59.447 [E] [asm_amd64.s:573]  <QuerySeter> no row found
+2019/12/17 15:16:01.334 [E] [asm_amd64.s:573]  <QuerySeter> no row found
+2019/12/17 15:16:25.054 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 15:16:30.536 [E] [asm_amd64.s:573]  <QuerySeter> no row found
+2019/12/17 15:19:47.029 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 15:58:33.421 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 16:10:48.583 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 16:10:49.455 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 16:11:26.783 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 16:18:01.572 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 16:19:11.300 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 16:23:49.821 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 16:23:59.353 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 16:26:45.572 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 16:35:17.835 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 16:35:54.175 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 16:36:26.202 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 16:38:16.963 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 16:38:20.618 [C] [asm_amd64.s:573]  the request url is  /api
+2019/12/17 16:38:20.618 [C] [asm_amd64.s:573]  Handler crashed with error reflect.Set: value of type []orm.Params is not assignable to type orm.Params
+2019/12/17 16:38:20.618 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:573
+2019/12/17 16:38:20.618 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/panic.go:502
+2019/12/17 16:38:20.618 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:2235
+2019/12/17 16:38:20.618 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:1373
+2019/12/17 16:38:20.618 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:1864
+2019/12/17 16:38:20.618 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/orm/orm_raw.go:262
+2019/12/17 16:38:20.618 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/orm/orm_raw.go:396
+2019/12/17 16:38:20.619 [C] [asm_amd64.s:573]  /home/python/gocode/src/quickstart/controllers/index.go:91
+2019/12/17 16:38:20.619 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:573
+2019/12/17 16:38:20.619 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:447
+2019/12/17 16:38:20.619 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:308
+2019/12/17 16:38:20.619 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/router.go:853
+2019/12/17 16:38:20.619 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:2694
+2019/12/17 16:38:20.619 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:1830
+2019/12/17 16:38:20.619 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:2361
+2019/12/17 16:38:20.619 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/12/17 16:38:45.996 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 16:38:48.938 [C] [asm_amd64.s:573]  the request url is  /api
+2019/12/17 16:38:48.938 [C] [asm_amd64.s:573]  Handler crashed with error reflect.Set: value of type []orm.Params is not assignable to type orm.Params
+2019/12/17 16:38:48.938 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:573
+2019/12/17 16:38:48.938 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/panic.go:502
+2019/12/17 16:38:48.938 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:2235
+2019/12/17 16:38:48.938 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:1373
+2019/12/17 16:38:48.938 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:1864
+2019/12/17 16:38:48.938 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/orm/orm_raw.go:262
+2019/12/17 16:38:48.938 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/orm/orm_raw.go:396
+2019/12/17 16:38:48.938 [C] [asm_amd64.s:573]  /home/python/gocode/src/quickstart/controllers/index.go:91
+2019/12/17 16:38:48.938 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:573
+2019/12/17 16:38:48.938 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:447
+2019/12/17 16:38:48.938 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:308
+2019/12/17 16:38:48.939 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/router.go:853
+2019/12/17 16:38:48.939 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:2694
+2019/12/17 16:38:48.939 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:1830
+2019/12/17 16:38:48.939 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:2361
+2019/12/17 16:38:48.939 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/12/17 16:38:50.867 [C] [asm_amd64.s:573]  the request url is  /api
+2019/12/17 16:38:50.867 [C] [asm_amd64.s:573]  Handler crashed with error reflect.Set: value of type []orm.Params is not assignable to type orm.Params
+2019/12/17 16:38:50.867 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:573
+2019/12/17 16:38:50.867 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/panic.go:502
+2019/12/17 16:38:50.867 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:2235
+2019/12/17 16:38:50.867 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:1373
+2019/12/17 16:38:50.867 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:1864
+2019/12/17 16:38:50.867 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/orm/orm_raw.go:262
+2019/12/17 16:38:50.867 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/orm/orm_raw.go:396
+2019/12/17 16:38:50.867 [C] [asm_amd64.s:573]  /home/python/gocode/src/quickstart/controllers/index.go:91
+2019/12/17 16:38:50.867 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:573
+2019/12/17 16:38:50.867 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:447
+2019/12/17 16:38:50.867 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:308
+2019/12/17 16:38:50.867 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/router.go:853
+2019/12/17 16:38:50.867 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:2694
+2019/12/17 16:38:50.867 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:1830
+2019/12/17 16:38:50.867 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:2361
+2019/12/17 16:38:50.868 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/12/17 16:39:35.605 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 16:40:50.586 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 16:40:56.350 [C] [asm_amd64.s:573]  the request url is  /api
+2019/12/17 16:40:56.350 [C] [asm_amd64.s:573]  Handler crashed with error reflect.Set: value of type []orm.Params is not assignable to type orm.Params
+2019/12/17 16:40:56.350 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:573
+2019/12/17 16:40:56.350 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/panic.go:502
+2019/12/17 16:40:56.350 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:2235
+2019/12/17 16:40:56.350 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:1373
+2019/12/17 16:40:56.350 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:1864
+2019/12/17 16:40:56.350 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/orm/orm_raw.go:262
+2019/12/17 16:40:56.350 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/orm/orm_raw.go:396
+2019/12/17 16:40:56.350 [C] [asm_amd64.s:573]  /home/python/gocode/src/quickstart/controllers/index.go:91
+2019/12/17 16:40:56.350 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:573
+2019/12/17 16:40:56.350 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:447
+2019/12/17 16:40:56.350 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:308
+2019/12/17 16:40:56.350 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/router.go:853
+2019/12/17 16:40:56.350 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:2694
+2019/12/17 16:40:56.350 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:1830
+2019/12/17 16:40:56.350 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:2361
+2019/12/17 16:40:56.350 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/12/17 16:40:57.251 [C] [asm_amd64.s:573]  the request url is  /api
+2019/12/17 16:40:57.251 [C] [asm_amd64.s:573]  Handler crashed with error reflect.Set: value of type []orm.Params is not assignable to type orm.Params
+2019/12/17 16:40:57.251 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:573
+2019/12/17 16:40:57.251 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/panic.go:502
+2019/12/17 16:40:57.251 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:2235
+2019/12/17 16:40:57.251 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:1373
+2019/12/17 16:40:57.251 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:1864
+2019/12/17 16:40:57.251 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/orm/orm_raw.go:262
+2019/12/17 16:40:57.251 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/orm/orm_raw.go:396
+2019/12/17 16:40:57.251 [C] [asm_amd64.s:573]  /home/python/gocode/src/quickstart/controllers/index.go:91
+2019/12/17 16:40:57.251 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:573
+2019/12/17 16:40:57.251 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:447
+2019/12/17 16:40:57.251 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:308
+2019/12/17 16:40:57.251 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/router.go:853
+2019/12/17 16:40:57.251 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:2694
+2019/12/17 16:40:57.251 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:1830
+2019/12/17 16:40:57.252 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:2361
+2019/12/17 16:40:57.252 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/12/17 16:40:57.406 [C] [asm_amd64.s:573]  the request url is  /api
+2019/12/17 16:40:57.406 [C] [asm_amd64.s:573]  Handler crashed with error reflect.Set: value of type []orm.Params is not assignable to type orm.Params
+2019/12/17 16:40:57.406 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:573
+2019/12/17 16:40:57.406 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/panic.go:502
+2019/12/17 16:40:57.406 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:2235
+2019/12/17 16:40:57.406 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:1373
+2019/12/17 16:40:57.406 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:1864
+2019/12/17 16:40:57.406 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/orm/orm_raw.go:262
+2019/12/17 16:40:57.406 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/orm/orm_raw.go:396
+2019/12/17 16:40:57.406 [C] [asm_amd64.s:573]  /home/python/gocode/src/quickstart/controllers/index.go:91
+2019/12/17 16:40:57.406 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:573
+2019/12/17 16:40:57.406 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:447
+2019/12/17 16:40:57.406 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:308
+2019/12/17 16:40:57.406 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/router.go:853
+2019/12/17 16:40:57.406 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:2694
+2019/12/17 16:40:57.406 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:1830
+2019/12/17 16:40:57.406 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:2361
+2019/12/17 16:40:57.406 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/12/17 16:40:57.607 [C] [asm_amd64.s:573]  the request url is  /api
+2019/12/17 16:40:57.607 [C] [asm_amd64.s:573]  Handler crashed with error reflect.Set: value of type []orm.Params is not assignable to type orm.Params
+2019/12/17 16:40:57.607 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:573
+2019/12/17 16:40:57.607 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/panic.go:502
+2019/12/17 16:40:57.607 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:2235
+2019/12/17 16:40:57.607 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:1373
+2019/12/17 16:40:57.607 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:1864
+2019/12/17 16:40:57.607 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/orm/orm_raw.go:262
+2019/12/17 16:40:57.607 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/orm/orm_raw.go:396
+2019/12/17 16:40:57.607 [C] [asm_amd64.s:573]  /home/python/gocode/src/quickstart/controllers/index.go:91
+2019/12/17 16:40:57.607 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:573
+2019/12/17 16:40:57.607 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:447
+2019/12/17 16:40:57.607 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:308
+2019/12/17 16:40:57.607 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/router.go:853
+2019/12/17 16:40:57.607 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:2694
+2019/12/17 16:40:57.607 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:1830
+2019/12/17 16:40:57.607 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:2361
+2019/12/17 16:40:57.607 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/12/17 16:40:57.794 [C] [asm_amd64.s:573]  the request url is  /api
+2019/12/17 16:40:57.794 [C] [asm_amd64.s:573]  Handler crashed with error reflect.Set: value of type []orm.Params is not assignable to type orm.Params
+2019/12/17 16:40:57.794 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:573
+2019/12/17 16:40:57.794 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/panic.go:502
+2019/12/17 16:40:57.794 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:2235
+2019/12/17 16:40:57.794 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:1373
+2019/12/17 16:40:57.794 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:1864
+2019/12/17 16:40:57.794 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/orm/orm_raw.go:262
+2019/12/17 16:40:57.794 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/orm/orm_raw.go:396
+2019/12/17 16:40:57.794 [C] [asm_amd64.s:573]  /home/python/gocode/src/quickstart/controllers/index.go:91
+2019/12/17 16:40:57.794 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:573
+2019/12/17 16:40:57.794 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:447
+2019/12/17 16:40:57.794 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:308
+2019/12/17 16:40:57.794 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/router.go:853
+2019/12/17 16:40:57.794 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:2694
+2019/12/17 16:40:57.794 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:1830
+2019/12/17 16:40:57.794 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:2361
+2019/12/17 16:40:57.794 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/12/17 16:40:58.182 [C] [asm_amd64.s:573]  the request url is  /api
+2019/12/17 16:40:58.182 [C] [asm_amd64.s:573]  Handler crashed with error reflect.Set: value of type []orm.Params is not assignable to type orm.Params
+2019/12/17 16:40:58.182 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:573
+2019/12/17 16:40:58.182 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/panic.go:502
+2019/12/17 16:40:58.182 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:2235
+2019/12/17 16:40:58.182 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:1373
+2019/12/17 16:40:58.182 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:1864
+2019/12/17 16:40:58.182 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/orm/orm_raw.go:262
+2019/12/17 16:40:58.182 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/orm/orm_raw.go:396
+2019/12/17 16:40:58.182 [C] [asm_amd64.s:573]  /home/python/gocode/src/quickstart/controllers/index.go:91
+2019/12/17 16:40:58.182 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:573
+2019/12/17 16:40:58.182 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:447
+2019/12/17 16:40:58.182 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:308
+2019/12/17 16:40:58.182 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/router.go:853
+2019/12/17 16:40:58.182 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:2694
+2019/12/17 16:40:58.182 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:1830
+2019/12/17 16:40:58.182 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:2361
+2019/12/17 16:40:58.182 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/12/17 16:40:58.331 [C] [asm_amd64.s:573]  the request url is  /api
+2019/12/17 16:40:58.331 [C] [asm_amd64.s:573]  Handler crashed with error reflect.Set: value of type []orm.Params is not assignable to type orm.Params
+2019/12/17 16:40:58.331 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:573
+2019/12/17 16:40:58.331 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/panic.go:502
+2019/12/17 16:40:58.331 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:2235
+2019/12/17 16:40:58.331 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:1373
+2019/12/17 16:40:58.331 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:1864
+2019/12/17 16:40:58.331 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/orm/orm_raw.go:262
+2019/12/17 16:40:58.331 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/orm/orm_raw.go:396
+2019/12/17 16:40:58.331 [C] [asm_amd64.s:573]  /home/python/gocode/src/quickstart/controllers/index.go:91
+2019/12/17 16:40:58.331 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:573
+2019/12/17 16:40:58.331 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:447
+2019/12/17 16:40:58.331 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:308
+2019/12/17 16:40:58.331 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/router.go:853
+2019/12/17 16:40:58.331 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:2694
+2019/12/17 16:40:58.331 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:1830
+2019/12/17 16:40:58.331 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:2361
+2019/12/17 16:40:58.331 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/12/17 16:40:58.579 [C] [asm_amd64.s:573]  the request url is  /api
+2019/12/17 16:40:58.579 [C] [asm_amd64.s:573]  Handler crashed with error reflect.Set: value of type []orm.Params is not assignable to type orm.Params
+2019/12/17 16:40:58.579 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:573
+2019/12/17 16:40:58.579 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/panic.go:502
+2019/12/17 16:40:58.579 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:2235
+2019/12/17 16:40:58.579 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:1373
+2019/12/17 16:40:58.579 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:1864
+2019/12/17 16:40:58.579 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/orm/orm_raw.go:262
+2019/12/17 16:40:58.579 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/orm/orm_raw.go:396
+2019/12/17 16:40:58.579 [C] [asm_amd64.s:573]  /home/python/gocode/src/quickstart/controllers/index.go:91
+2019/12/17 16:40:58.579 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:573
+2019/12/17 16:40:58.579 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:447
+2019/12/17 16:40:58.579 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:308
+2019/12/17 16:40:58.579 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/router.go:853
+2019/12/17 16:40:58.579 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:2694
+2019/12/17 16:40:58.579 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:1830
+2019/12/17 16:40:58.579 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:2361
+2019/12/17 16:40:58.579 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/12/17 16:41:34.966 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 16:43:14.899 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 16:43:20.458 [C] [asm_amd64.s:573]  the request url is  /api
+2019/12/17 16:43:20.458 [C] [asm_amd64.s:573]  Handler crashed with error reflect.Set: value of type []orm.Params is not assignable to type orm.Params
+2019/12/17 16:43:20.458 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:573
+2019/12/17 16:43:20.458 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/panic.go:502
+2019/12/17 16:43:20.458 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:2235
+2019/12/17 16:43:20.458 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:1373
+2019/12/17 16:43:20.458 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:1864
+2019/12/17 16:43:20.458 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/orm/orm_raw.go:262
+2019/12/17 16:43:20.458 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/orm/orm_raw.go:396
+2019/12/17 16:43:20.458 [C] [asm_amd64.s:573]  /home/python/gocode/src/quickstart/controllers/index.go:91
+2019/12/17 16:43:20.458 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:573
+2019/12/17 16:43:20.458 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:447
+2019/12/17 16:43:20.458 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:308
+2019/12/17 16:43:20.458 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/router.go:853
+2019/12/17 16:43:20.458 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:2694
+2019/12/17 16:43:20.458 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:1830
+2019/12/17 16:43:20.458 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:2361
+2019/12/17 16:43:20.459 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/12/17 16:43:54.590 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 16:43:59.650 [C] [asm_amd64.s:573]  the request url is  /api
+2019/12/17 16:43:59.650 [C] [asm_amd64.s:573]  Handler crashed with error reflect.Set: value of type []orm.Params is not assignable to type orm.Params
+2019/12/17 16:43:59.650 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:573
+2019/12/17 16:43:59.650 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/panic.go:502
+2019/12/17 16:43:59.650 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:2235
+2019/12/17 16:43:59.650 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:1373
+2019/12/17 16:43:59.650 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:1864
+2019/12/17 16:43:59.651 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/orm/orm_raw.go:262
+2019/12/17 16:43:59.651 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/orm/orm_raw.go:396
+2019/12/17 16:43:59.651 [C] [asm_amd64.s:573]  /home/python/gocode/src/quickstart/controllers/index.go:91
+2019/12/17 16:43:59.651 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:573
+2019/12/17 16:43:59.651 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:447
+2019/12/17 16:43:59.651 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:308
+2019/12/17 16:43:59.651 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/router.go:853
+2019/12/17 16:43:59.651 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:2694
+2019/12/17 16:43:59.651 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:1830
+2019/12/17 16:43:59.651 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:2361
+2019/12/17 16:43:59.652 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/12/17 16:44:01.168 [C] [asm_amd64.s:573]  the request url is  /api
+2019/12/17 16:44:01.168 [C] [asm_amd64.s:573]  Handler crashed with error reflect.Set: value of type []orm.Params is not assignable to type orm.Params
+2019/12/17 16:44:01.168 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:573
+2019/12/17 16:44:01.168 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/panic.go:502
+2019/12/17 16:44:01.168 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:2235
+2019/12/17 16:44:01.168 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:1373
+2019/12/17 16:44:01.168 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:1864
+2019/12/17 16:44:01.168 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/orm/orm_raw.go:262
+2019/12/17 16:44:01.168 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/orm/orm_raw.go:396
+2019/12/17 16:44:01.168 [C] [asm_amd64.s:573]  /home/python/gocode/src/quickstart/controllers/index.go:91
+2019/12/17 16:44:01.168 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:573
+2019/12/17 16:44:01.168 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:447
+2019/12/17 16:44:01.168 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:308
+2019/12/17 16:44:01.168 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/router.go:853
+2019/12/17 16:44:01.168 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:2694
+2019/12/17 16:44:01.168 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:1830
+2019/12/17 16:44:01.168 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:2361
+2019/12/17 16:44:01.169 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/12/17 16:44:23.359 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 16:44:26.222 [C] [asm_amd64.s:573]  the request url is  /api
+2019/12/17 16:44:26.222 [C] [asm_amd64.s:573]  Handler crashed with error reflect.Set: value of type []orm.Params is not assignable to type orm.Params
+2019/12/17 16:44:26.222 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:573
+2019/12/17 16:44:26.222 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/panic.go:502
+2019/12/17 16:44:26.222 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:2235
+2019/12/17 16:44:26.222 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:1373
+2019/12/17 16:44:26.222 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:1864
+2019/12/17 16:44:26.222 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/orm/orm_raw.go:262
+2019/12/17 16:44:26.222 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/orm/orm_raw.go:396
+2019/12/17 16:44:26.222 [C] [asm_amd64.s:573]  /home/python/gocode/src/quickstart/controllers/index.go:91
+2019/12/17 16:44:26.222 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:573
+2019/12/17 16:44:26.222 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:447
+2019/12/17 16:44:26.222 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:308
+2019/12/17 16:44:26.222 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/router.go:853
+2019/12/17 16:44:26.222 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:2694
+2019/12/17 16:44:26.222 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:1830
+2019/12/17 16:44:26.222 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:2361
+2019/12/17 16:44:26.223 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/12/17 16:44:27.088 [C] [asm_amd64.s:573]  the request url is  /api
+2019/12/17 16:44:27.088 [C] [asm_amd64.s:573]  Handler crashed with error reflect.Set: value of type []orm.Params is not assignable to type orm.Params
+2019/12/17 16:44:27.088 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:573
+2019/12/17 16:44:27.088 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/panic.go:502
+2019/12/17 16:44:27.088 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:2235
+2019/12/17 16:44:27.088 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:1373
+2019/12/17 16:44:27.088 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:1864
+2019/12/17 16:44:27.088 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/orm/orm_raw.go:262
+2019/12/17 16:44:27.088 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/orm/orm_raw.go:396
+2019/12/17 16:44:27.088 [C] [asm_amd64.s:573]  /home/python/gocode/src/quickstart/controllers/index.go:91
+2019/12/17 16:44:27.088 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:573
+2019/12/17 16:44:27.088 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:447
+2019/12/17 16:44:27.088 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:308
+2019/12/17 16:44:27.088 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/router.go:853
+2019/12/17 16:44:27.088 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:2694
+2019/12/17 16:44:27.088 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:1830
+2019/12/17 16:44:27.088 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:2361
+2019/12/17 16:44:27.088 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/12/17 16:45:08.491 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 16:45:35.111 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 16:45:59.838 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 16:53:08.175 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 16:53:12.770 [C] [asm_amd64.s:573]  the request url is  /api
+2019/12/17 16:53:12.770 [C] [asm_amd64.s:573]  Handler crashed with error reflect.Set: value of type []orm.Params is not assignable to type orm.Params
+2019/12/17 16:53:12.770 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:573
+2019/12/17 16:53:12.770 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/panic.go:502
+2019/12/17 16:53:12.770 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:2235
+2019/12/17 16:53:12.770 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:1373
+2019/12/17 16:53:12.770 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:1864
+2019/12/17 16:53:12.770 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/orm/orm_raw.go:262
+2019/12/17 16:53:12.770 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/orm/orm_raw.go:396
+2019/12/17 16:53:12.770 [C] [asm_amd64.s:573]  /home/python/gocode/src/quickstart/controllers/index.go:90
+2019/12/17 16:53:12.770 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:573
+2019/12/17 16:53:12.771 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:447
+2019/12/17 16:53:12.771 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:308
+2019/12/17 16:53:12.771 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/router.go:853
+2019/12/17 16:53:12.771 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:2694
+2019/12/17 16:53:12.771 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:1830
+2019/12/17 16:53:12.771 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:2361
+2019/12/17 16:53:12.771 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/12/17 16:53:29.319 [C] [asm_amd64.s:573]  the request url is  /api
+2019/12/17 16:53:29.319 [C] [asm_amd64.s:573]  Handler crashed with error reflect.Set: value of type []orm.Params is not assignable to type orm.Params
+2019/12/17 16:53:29.319 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:573
+2019/12/17 16:53:29.319 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/panic.go:502
+2019/12/17 16:53:29.319 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:2235
+2019/12/17 16:53:29.319 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:1373
+2019/12/17 16:53:29.319 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:1864
+2019/12/17 16:53:29.319 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/orm/orm_raw.go:262
+2019/12/17 16:53:29.319 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/orm/orm_raw.go:396
+2019/12/17 16:53:29.319 [C] [asm_amd64.s:573]  /home/python/gocode/src/quickstart/controllers/index.go:90
+2019/12/17 16:53:29.319 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:573
+2019/12/17 16:53:29.319 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:447
+2019/12/17 16:53:29.319 [C] [asm_amd64.s:573]  /home/python/go/src/reflect/value.go:308
+2019/12/17 16:53:29.319 [C] [asm_amd64.s:573]  /home/python/gocode/src/github.com/astaxie/beego/router.go:853
+2019/12/17 16:53:29.319 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:2694
+2019/12/17 16:53:29.319 [C] [asm_amd64.s:573]  /home/python/go/src/net/http/server.go:1830
+2019/12/17 16:53:29.319 [C] [asm_amd64.s:573]  /home/python/go/src/runtime/asm_amd64.s:2361
+2019/12/17 16:53:29.319 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/12/17 16:56:07.591 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 17:00:05.378 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 17:01:54.508 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 17:05:45.392 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 17:19:24.759 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 17:19:30.578 [E] [asm_amd64.s:573]  sql: expected 2 destination arguments in Scan, not 1
+2019/12/17 17:21:01.555 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 17:21:58.782 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 17:24:23.852 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 17:25:19.950 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 17:26:18.305 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 17:27:29.555 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 17:28:06.149 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 17:28:13.066 [E] [asm_amd64.s:573]  Error 1054: Unknown column 'logintime' in 'field list'
+2019/12/17 17:29:05.961 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/17 17:29:07.662 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080

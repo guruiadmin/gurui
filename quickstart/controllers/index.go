@@ -3,7 +3,9 @@ package controllers
 import (
 	"fmt"
 	"github.com/astaxie/beego"
+	"github.com/astaxie/beego/logs"
 	"github.com/astaxie/beego/orm"
+	"quickstart/models"
 	"time"
 )
 
@@ -18,6 +20,13 @@ type RESPONSEJOSN struct {
 	Data []map[string]string
 }
 
+
+type JSONS1 struct {
+	//必须的大写开头
+	Code string
+	Msg  string
+	User []models.Goods
+}
 
 func Select(ids  string) (string, string, string){
 	//sqlText := fmt.Sprintf("select foreign_key , name, market_price,brief from goods where foreign_key = '%s'", ids)
@@ -73,6 +82,30 @@ func (c *LoggerController) Get() {
 	}
 	c.ServeJSON()
 }
+
+func (c *LoggerController) GoodsGet(){
+	o := orm.NewOrm()
+	var goods []models.Goods
+	name := c.GetString("a")
+	_, err := o.Raw("select name,foreign_key,create_time from goods where name like '%"+name+"%'").QueryRows(&goods)
+	if err != nil {
+		logs.Error(err)
+		c.Ctx.WriteString("1111111111jsoninfo is empty")
+		return
+	}
+	//jsons,_ := json.Marshal(goods)	///将结构体数组编码成json字符串([]byte)
+	//fmt.Println(string(jsons))		//将[]byte转为string打印出来
+	//fmt.Printf("%T\n", goods)
+	result := &JSONS1{
+		"200",
+		"获取成功",
+		goods,
+	}
+	c.Data["json"] = result			//将结构体数组根据tag解析为json
+	c.ServeJSON()					//对json进行序列化输出
+	//c.StopRun()						//终止执行逻辑
+}
+
 
 
 
