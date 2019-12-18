@@ -21,10 +21,11 @@ type RESPONSEJOSN struct {
 }
 
 
-type JSONS1 struct {
+type JSONS11 struct {
 	//必须的大写开头
 	Code string
 	Msg  string
+	Num int64
 	User []models.Goods
 }
 
@@ -87,7 +88,9 @@ func (c *LoggerController) GoodsGet(){
 	o := orm.NewOrm()
 	var goods []models.Goods
 	name := c.GetString("a")
-	_, err := o.Raw("select name,foreign_key,create_time from goods where name like '%"+name+"%'").QueryRows(&goods)
+	//_, err := o.Raw("select name,foreign_key,create_time from goods where name like '%"+name+"%'").QueryRows(&goods)
+	num, err := o.Raw("select name,foreign_key,create_time,(select short_name from manager where foreign_key = s.foreign_key) as short_name from goods as s where s.name like '%"+name+"%'").QueryRows(&goods)
+	fmt.Printf("%T", num)
 	if err != nil {
 		logs.Error(err)
 		c.Ctx.WriteString("1111111111jsoninfo is empty")
@@ -96,14 +99,14 @@ func (c *LoggerController) GoodsGet(){
 	//jsons,_ := json.Marshal(goods)	///将结构体数组编码成json字符串([]byte)
 	//fmt.Println(string(jsons))		//将[]byte转为string打印出来
 	//fmt.Printf("%T\n", goods)
-	result := &JSONS1{
+	result := &JSONS11{
 		"200",
 		"获取成功",
+		num,
 		goods,
 	}
 	c.Data["json"] = result			//将结构体数组根据tag解析为json
 	c.ServeJSON()					//对json进行序列化输出
-	//c.StopRun()						//终止执行逻辑
 }
 
 
