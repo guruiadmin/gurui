@@ -1,7 +1,0 @@
-
-FROM registry.cn-beijing.aliyuncs.com/mingjingtai/bj:python
-WORKDIR /mysql_datashow
-COPY . /mysql_datashow/
-#RUN pip install -r requirements.txt
-EXPOSE 5000
-CMD ["python","manage.py","runserver","0.0.0.0:5000"]

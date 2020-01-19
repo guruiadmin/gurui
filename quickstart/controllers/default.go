@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
+	"quickstart/quickservice"
 )
 
 type MainController struct {
@@ -38,11 +39,15 @@ type JSONS struct {
 }
 
 func (c *MainController) Get() {
-		data := &JSONS{
-			"100",
-			"获取成功",
-			[]string{"maple","18"},
-			LIKE{"蛋糕","电影","音乐"}}
-		c.Data["json"] = data
-		c.ServeJSON()
+	username := c.GetString("user")
+	password := c.GetString("pw")
+	fmt.Println(username, password)
+	if quickservice.ValidateAdminLogin(username, password) {
+
+		c.SetSession("Adminname", username)
+		c.Ctx.WriteString("jsoninfo")
+	} else {
+		c.Ctx.WriteString("jsoninfo is empty")
+		//c.TplName = "admin/login.html"
 	}
+}

@@ -1,0 +1,219 @@
+2020/01/13 15:47:54.092 [server.go:3054]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/01/13 15:55:31.625 [server.go:3054]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/01/13 16:29:19.359 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/13 16:29:24.230 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/13 16:29:30.481 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/13 16:29:35.890 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/13 16:29:36.012 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|           0s|   match|[44m GET     [0m /mjt   r:/mjt
+2020/01/13 16:29:39.551 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|           0s|   match|[44m GET     [0m /mjt   r:/mjt
+2020/01/13 16:29:46.988 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|           0s|   match|[44m GET     [0m /mjt   r:/mjt
+2020/01/13 16:29:48.785 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|           0s|   match|[44m GET     [0m /mjt   r:/mjt
+2020/01/13 16:29:49.868 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|           0s|   match|[44m GET     [0m /mjt   r:/mjt
+2020/01/13 16:30:03.751 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|           0s|   match|[44m GET     [0m /mjt   r:/mjt
+2020/01/13 16:30:05.047 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|      911.7µs|   match|[44m GET     [0m /mjt   r:/mjt
+2020/01/13 16:30:05.782 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|           0s|   match|[44m GET     [0m /mjt   r:/mjt
+2020/01/13 16:30:05.949 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|      992.7µs|   match|[44m GET     [0m /mjt   r:/mjt
+2020/01/13 16:30:06.125 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|           0s|   match|[44m GET     [0m /mjt   r:/mjt
+2020/01/13 16:30:06.304 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|           0s|   match|[44m GET     [0m /mjt   r:/mjt
+2020/01/13 16:30:06.468 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|           0s|   match|[44m GET     [0m /mjt   r:/mjt
+2020/01/13 16:30:06.686 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|           0s|   match|[44m GET     [0m /mjt   r:/mjt
+2020/01/13 16:32:41.698 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/13 16:32:46.414 [C] [panic.go:679]  the request url is  /mjt
+2020/01/13 16:32:46.414 [C] [panic.go:679]  Handler crashed with error can't find templatefile in the path:views/basecontroller/dazu.tpl
+2020/01/13 16:32:46.414 [C] [panic.go:679]  D:/golang/go/src/runtime/panic.go:679
+2020/01/13 16:32:46.414 [C] [panic.go:679]  D:/golang/project/src/github.com/astaxie/beego/template.go:75
+2020/01/13 16:32:46.414 [C] [panic.go:679]  D:/golang/project/src/github.com/astaxie/beego/controller.go:306
+2020/01/13 16:32:46.414 [C] [panic.go:679]  D:/golang/project/src/github.com/astaxie/beego/controller.go:257
+2020/01/13 16:32:46.414 [C] [panic.go:679]  D:/golang/project/src/github.com/astaxie/beego/controller.go:237
+2020/01/13 16:32:46.414 [C] [panic.go:679]  D:/golang/project/src/github.com/astaxie/beego/router.go:865
+2020/01/13 16:32:46.414 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:2802
+2020/01/13 16:32:46.414 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:1890
+2020/01/13 16:32:46.414 [C] [panic.go:679]  D:/golang/go/src/runtime/asm_386.s:1325
+2020/01/13 16:32:46.415 [server.go:3054]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/01/13 16:33:37.376 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/13 16:33:41.748 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|           0s|   match|[44m GET     [0m /mjt   r:/mjt
+2020/01/13 16:33:45.101 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|           0s|   match|[44m GET     [0m /mjt   r:/mjt
+2020/01/13 16:33:46.122 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|           0s|   match|[44m GET     [0m /mjt   r:/mjt
+2020/01/13 16:33:46.304 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|      457.8µs|   match|[44m GET     [0m /mjt   r:/mjt
+2020/01/13 16:33:46.485 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|           0s|   match|[44m GET     [0m /mjt   r:/mjt
+2020/01/13 16:33:46.662 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|           0s|   match|[44m GET     [0m /mjt   r:/mjt
+2020/01/13 16:33:46.833 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|           0s|   match|[44m GET     [0m /mjt   r:/mjt
+2020/01/13 16:33:47.050 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|           0s|   match|[44m GET     [0m /mjt   r:/mjt
+2020/01/13 16:33:51.878 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/17 11:24:18.266 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/17 11:25:27.947 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/17 11:26:58.869 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/17 11:28:55.793 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/17 11:29:45.137 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/17 11:29:51.706 [C] [panic.go:679]  the request url is  /login
+2020/01/17 11:29:51.706 [C] [panic.go:679]  Handler crashed with error can't find templatefile in the path:views/basecontroller/post.tpl
+2020/01/17 11:29:51.706 [C] [panic.go:679]  D:/golang/go/src/runtime/panic.go:679
+2020/01/17 11:29:51.706 [C] [panic.go:679]  D:/golang/project/src/github.com/astaxie/beego/template.go:75
+2020/01/17 11:29:51.706 [C] [panic.go:679]  D:/golang/project/src/github.com/astaxie/beego/controller.go:306
+2020/01/17 11:29:51.706 [C] [panic.go:679]  D:/golang/project/src/github.com/astaxie/beego/controller.go:257
+2020/01/17 11:29:51.706 [C] [panic.go:679]  D:/golang/project/src/github.com/astaxie/beego/controller.go:237
+2020/01/17 11:29:51.706 [C] [panic.go:679]  D:/golang/project/src/github.com/astaxie/beego/router.go:865
+2020/01/17 11:29:51.706 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:2802
+2020/01/17 11:29:51.706 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:1890
+2020/01/17 11:29:51.706 [C] [panic.go:679]  D:/golang/go/src/runtime/asm_386.s:1325
+2020/01/17 11:29:51.706 [server.go:3054]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/01/17 11:30:16.231 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/17 11:31:23.627 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/17 11:32:24.210 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/17 11:33:48.920 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/17 11:41:35.367 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/17 11:42:17.180 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/17 11:58:41.763 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/17 12:07:35.523 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/17 12:08:44.429 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/17 12:10:16.510 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/17 12:10:49.661 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/17 12:11:11.400 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/17 12:12:31.227 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/17 12:54:54.554 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/17 12:54:57.308 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/17 12:55:06.450 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/17 12:55:09.477 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/17 12:55:12.422 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/17 12:56:39.614 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/17 12:56:52.424 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/17 12:59:38.067 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/17 12:59:40.960 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/17 13:00:59.156 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/17 13:06:52.632 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/17 13:06:56.466 [C] [panic.go:679]  the request url is  /login
+2020/01/17 13:06:56.466 [C] [panic.go:679]  Handler crashed with error can't find templatefile in the path:views/basecontroller/post.tpl
+2020/01/17 13:06:56.466 [C] [panic.go:679]  D:/golang/go/src/runtime/panic.go:679
+2020/01/17 13:06:56.466 [C] [panic.go:679]  D:/golang/project/src/github.com/astaxie/beego/template.go:75
+2020/01/17 13:06:56.466 [C] [panic.go:679]  D:/golang/project/src/github.com/astaxie/beego/controller.go:306
+2020/01/17 13:06:56.466 [C] [panic.go:679]  D:/golang/project/src/github.com/astaxie/beego/controller.go:257
+2020/01/17 13:06:56.466 [C] [panic.go:679]  D:/golang/project/src/github.com/astaxie/beego/controller.go:237
+2020/01/17 13:06:56.466 [C] [panic.go:679]  D:/golang/project/src/github.com/astaxie/beego/router.go:865
+2020/01/17 13:06:56.466 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:2802
+2020/01/17 13:06:56.466 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:1890
+2020/01/17 13:06:56.466 [C] [panic.go:679]  D:/golang/go/src/runtime/asm_386.s:1325
+2020/01/17 13:06:56.467 [server.go:3054]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/01/17 13:09:40.501 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/17 13:09:45.968 [C] [panic.go:679]  the request url is  /login
+2020/01/17 13:09:45.968 [C] [panic.go:679]  Handler crashed with error can't find templatefile in the path:views/basecontroller/post.tpl
+2020/01/17 13:09:45.968 [C] [panic.go:679]  D:/golang/go/src/runtime/panic.go:679
+2020/01/17 13:09:45.969 [C] [panic.go:679]  D:/golang/project/src/github.com/astaxie/beego/template.go:75
+2020/01/17 13:09:45.969 [C] [panic.go:679]  D:/golang/project/src/github.com/astaxie/beego/controller.go:306
+2020/01/17 13:09:45.969 [C] [panic.go:679]  D:/golang/project/src/github.com/astaxie/beego/controller.go:257
+2020/01/17 13:09:45.969 [C] [panic.go:679]  D:/golang/project/src/github.com/astaxie/beego/controller.go:237
+2020/01/17 13:09:45.969 [C] [panic.go:679]  D:/golang/project/src/github.com/astaxie/beego/router.go:865
+2020/01/17 13:09:45.969 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:2802
+2020/01/17 13:09:45.969 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:1890
+2020/01/17 13:09:45.969 [C] [panic.go:679]  D:/golang/go/src/runtime/asm_386.s:1325
+2020/01/17 13:09:45.969 [server.go:3054]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/01/17 13:17:52.574 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/17 13:18:15.061 [C] [panic.go:679]  the request url is  /login
+2020/01/17 13:18:15.061 [C] [panic.go:679]  Handler crashed with error can't find templatefile in the path:views/basecontroller/post.tpl
+2020/01/17 13:18:15.061 [C] [panic.go:679]  D:/golang/go/src/runtime/panic.go:679
+2020/01/17 13:18:15.061 [C] [panic.go:679]  D:/golang/project/src/github.com/astaxie/beego/template.go:75
+2020/01/17 13:18:15.061 [C] [panic.go:679]  D:/golang/project/src/github.com/astaxie/beego/controller.go:306
+2020/01/17 13:18:15.061 [C] [panic.go:679]  D:/golang/project/src/github.com/astaxie/beego/controller.go:257
+2020/01/17 13:18:15.061 [C] [panic.go:679]  D:/golang/project/src/github.com/astaxie/beego/controller.go:237
+2020/01/17 13:18:15.061 [C] [panic.go:679]  D:/golang/project/src/github.com/astaxie/beego/router.go:865
+2020/01/17 13:18:15.061 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:2802
+2020/01/17 13:18:15.061 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:1890
+2020/01/17 13:18:15.061 [C] [panic.go:679]  D:/golang/go/src/runtime/asm_386.s:1325
+2020/01/17 13:18:15.062 [server.go:3054]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/01/17 13:19:21.073 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/17 13:19:24.975 [C] [panic.go:679]  the request url is  /login
+2020/01/17 13:19:24.975 [C] [panic.go:679]  Handler crashed with error can't find templatefile in the path:views/basecontroller/post.tpl
+2020/01/17 13:19:24.975 [C] [panic.go:679]  D:/golang/go/src/runtime/panic.go:679
+2020/01/17 13:19:24.975 [C] [panic.go:679]  D:/golang/project/src/github.com/astaxie/beego/template.go:75
+2020/01/17 13:19:24.975 [C] [panic.go:679]  D:/golang/project/src/github.com/astaxie/beego/controller.go:306
+2020/01/17 13:19:24.975 [C] [panic.go:679]  D:/golang/project/src/github.com/astaxie/beego/controller.go:257
+2020/01/17 13:19:24.975 [C] [panic.go:679]  D:/golang/project/src/github.com/astaxie/beego/controller.go:237
+2020/01/17 13:19:24.975 [C] [panic.go:679]  D:/golang/project/src/github.com/astaxie/beego/router.go:865
+2020/01/17 13:19:24.975 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:2802
+2020/01/17 13:19:24.975 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:1890
+2020/01/17 13:19:24.975 [C] [panic.go:679]  D:/golang/go/src/runtime/asm_386.s:1325
+2020/01/17 13:19:24.976 [server.go:3054]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/01/17 13:20:10.328 [C] [panic.go:679]  the request url is  /login
+2020/01/17 13:20:10.328 [C] [panic.go:679]  Handler crashed with error can't find templatefile in the path:views/basecontroller/post.tpl
+2020/01/17 13:20:10.328 [C] [panic.go:679]  D:/golang/go/src/runtime/panic.go:679
+2020/01/17 13:20:10.328 [C] [panic.go:679]  D:/golang/project/src/github.com/astaxie/beego/template.go:75
+2020/01/17 13:20:10.328 [C] [panic.go:679]  D:/golang/project/src/github.com/astaxie/beego/controller.go:306
+2020/01/17 13:20:10.328 [C] [panic.go:679]  D:/golang/project/src/github.com/astaxie/beego/controller.go:257
+2020/01/17 13:20:10.328 [C] [panic.go:679]  D:/golang/project/src/github.com/astaxie/beego/controller.go:237
+2020/01/17 13:20:10.328 [C] [panic.go:679]  D:/golang/project/src/github.com/astaxie/beego/router.go:865
+2020/01/17 13:20:10.328 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:2802
+2020/01/17 13:20:10.328 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:1890
+2020/01/17 13:20:10.328 [C] [panic.go:679]  D:/golang/go/src/runtime/asm_386.s:1325
+2020/01/17 13:20:10.328 [server.go:3054]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/01/17 13:20:53.074 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/17 13:23:25.891 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/17 13:27:08.071 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/17 13:28:02.344 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/17 13:28:57.246 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/17 13:32:02.348 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 09:19:59.761 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 09:20:04.965 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 09:20:10.073 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 09:20:14.942 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 09:20:20.598 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 09:48:33.948 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 09:49:07.103 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 10:19:59.170 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 14:26:27.262 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 14:26:27.267 [C] [asm_386.s:1325]  ListenAndServe:  listen tcp :8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2020/01/19 14:26:32.175 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 14:26:32.178 [C] [asm_386.s:1325]  ListenAndServe:  listen tcp :8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2020/01/19 14:26:37.449 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 14:26:37.451 [C] [asm_386.s:1325]  ListenAndServe:  listen tcp :8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2020/01/19 14:26:53.264 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 14:26:53.266 [C] [asm_386.s:1325]  ListenAndServe:  listen tcp :8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2020/01/19 14:28:00.432 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 14:28:55.995 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 14:32:31.453 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 14:38:03.865 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 14:40:40.299 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 14:51:54.323 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 15:56:13.923 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 16:07:15.691 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 17:30:36.100 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 17:31:11.057 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 17:32:50.115 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 17:35:34.638 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 17:47:25.056 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 17:48:52.062 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 17:51:47.673 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 17:54:10.023 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 17:55:45.484 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 17:56:44.799 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 17:57:59.102 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 17:59:44.551 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 18:02:20.104 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 18:02:26.933 [E] [value.go:460]  Error 1146: Table 'dev.goods' doesn't exist
+2020/01/19 18:03:09.681 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 18:05:25.216 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 18:07:25.624 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 18:09:26.517 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 18:17:29.725 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 18:17:47.230 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 18:18:25.535 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 18:19:50.101 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 18:31:49.109 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 18:32:05.032 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 18:32:13.579 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 18:32:16.951 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 18:32:29.270 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 18:32:47.264 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 18:33:14.570 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 18:33:23.624 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 18:33:35.299 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 18:33:39.364 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 18:33:51.238 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 18:34:09.463 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 18:34:18.064 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 18:34:27.354 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 18:34:30.986 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 18:34:45.211 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 18:38:43.034 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 18:38:47.501 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 18:39:46.286 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 18:41:38.884 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/19 18:43:12.224 [I] [asm_386.s:1325]  http server Running on http://:8080

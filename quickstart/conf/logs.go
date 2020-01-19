@@ -8,7 +8,7 @@ func init() {
 	//设置日志输出
 	logs.SetLogger("console")
 	//设置日志输出级别
-	logs.SetLevel(logs.LevelInfo)
+	logs.SetLevel(logs.LevelAlert)
 	//设置是否输出文件名和行号
 	logs.EnableFuncCallDepth(true)
 	//异步输出日志 le3设置缓冲区大小

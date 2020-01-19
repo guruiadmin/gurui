@@ -90,15 +90,11 @@ func (c *LoggerController) GoodsGet(){
 	name := c.GetString("a")
 	//_, err := o.Raw("select name,foreign_key,create_time from goods where name like '%"+name+"%'").QueryRows(&goods)
 	num, err := o.Raw("select name,foreign_key,create_time,(select short_name from manager where foreign_key = s.foreign_key) as short_name from goods as s where s.name like '%"+name+"%'").QueryRows(&goods)
-	fmt.Printf("%T", num)
 	if err != nil {
 		logs.Error(err)
 		c.Ctx.WriteString("1111111111jsoninfo is empty")
 		return
 	}
-	//jsons,_ := json.Marshal(goods)	///将结构体数组编码成json字符串([]byte)
-	//fmt.Println(string(jsons))		//将[]byte转为string打印出来
-	//fmt.Printf("%T\n", goods)
 	result := &JSONS11{
 		"200",
 		"获取成功",

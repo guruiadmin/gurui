@@ -449,3 +449,9 @@
 2019/12/18 16:07:11.615 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
 2019/12/18 16:07:46.930 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
 2019/12/18 16:08:11.890 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/20 11:33:12.466 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/20 11:33:14.525 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2019/12/20 16:08:38.382 [I] [asm_amd64.s:2361]  http server Running on http://127.0.0.1:8080
+2020/01/08 10:45:28.508 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2020/01/08 10:45:51.098 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2020/01/08 10:45:52.625 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
