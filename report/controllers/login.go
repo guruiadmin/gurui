@@ -83,11 +83,15 @@ type Code struct {
 
 type JSONS2 struct {
 	//必须的大写开头
-	Code string
-	Msg  string
-	User []string `json:"user_info"`//key重命名,最外面是反引号
+	Code string      `json:"code"`
+	Msg  string		 `json:"msg"`
+	Data   interface{}  `json:"data"`
 }
 
+type RESPONSE struct {
+	Code interface{}      `json:"code"`
+	Msg  interface{}		 `json:"msg"`
+}
 
 func (this *Basecontroller) Post() {
 	url := "https://oapi.dingtalk.com/gettoken?appkey=dingkarppuxvlty75z95&appsecret=1pwB8WmjeVeRZfpXEFSdu8zpevysoTOCI_mRxTgl1TCbFy8Hv9rYaY4aNu9utTkM"
@@ -115,9 +119,10 @@ func (this *Basecontroller) Post() {
 		fmt.Println("token转换 err=", err)
 		return
 	}
-	Msg := this.GetString("Msg")
-	if Msg == "" {
-		this.Ctx.WriteString("jsoninfo is empty")
+	Msg := this.GetString("Msg", "none")
+	if Msg == "none" {
+		http.Error(this.Ctx.ResponseWriter, "missing parameters", http.StatusBadRequest)
+		return
 	}
 		var token string
 		token = tokendata["access_token"].(string)
@@ -142,37 +147,52 @@ func (this *Basecontroller) Post() {
 		userid := user_result.String()
 		userdata := make(map[string]interface{})
 		usererr := json.Unmarshal([]byte(userid), &userdata)
-		if usererr != nil {
-			fmt.Println("token转换 err=", usererr)
+		if usererr != nil{
+			http.Error(this.Ctx.ResponseWriter, "token转换 err=", http.StatusBadGateway)
 			return
 		}
+		//if userdata["errcode"] != 200{
+		//	resultjson := &RESPONSE{
+		//		userdata["errcode"],
+		//		userdata["errmsg"],
+		//	}
+		//	this.Data["json"] = resultjson			//将结构体数组根据tag解析为json
+		//	this.ServeJSON()
+		//}
 		if userdata["is_sys"] == "true"{
 			userdata["is_sys"] = "1"
 		}else {
 			userdata["is_sys"] = "0"
 		}
-		//num, err := e.Raw("select id from staff where userid = ?", userdata["userid"] ).Exec()
-		//if err != nil {
-		//	fmt.Println("AddUser err=", err)
-		//}
 		o := orm.NewOrm()
 		var staff []models.Staff
 		num, err := o.Raw("select id from staff where userid = ?", userdata["userid"] ).QueryRows(&staff)
 		if err != nil {
 			logs.Error(err)
-			this.Ctx.WriteString("1111111111jsoninfo is empty")
+			http.Error(this.Ctx.ResponseWriter, "查询用户信息出错", http.StatusBadGateway)
 			return
 		}
-		fmt.Println(userdata["name"], num)
 		if userdata["name"] != nil && num < 1{
 			o := orm.NewOrm()
-			_, err = o.Raw("insert into staff(is_sys,name,deviceId,userid,sys_level,create_time) values(?,?,?,?,?,?)", userdata["is_sys"], userdata["name"], userdata["deviceId"],userdata["userid"],userdata["sys_level"], time.Now()).Exec()
+			_, err := o.Raw("insert into staff(is_sys,name,deviceId,userid,sys_level,create_time) values(?,?,?,?,?,?)", userdata["is_sys"], userdata["name"], userdata["deviceId"],userdata["userid"],userdata["sys_level"], time.Now()).Exec()
 			if err != nil {
-				fmt.Println("AddUser err=", err)
+				http.Error(this.Ctx.ResponseWriter, "存入用户信息 err=", http.StatusBadGateway)
+				return
 			}
 		}
-		data := &JSONS2{"100", "获取成功",
-			[]string{"maple","18"}}
-		this.Data["json"] = data
-		this.ServeJSON()
+
+	var mapppp = make(map[string]interface{})
+	mapppp["is_sys"]=userdata["is_sys"]
+	mapppp["name"]=userdata["name"]
+	mapppp["deviceId"]=userdata["deviceId"]
+	mapppp["userid"]=userdata["userid"]
+	mapppp["sys_level"]=userdata["sys_level"]
+
+	resultjson := &JSONS2{
+		"200",
+		"success",
+		mapppp,
+	}
+	this.Data["json"] = resultjson			//将结构体数组根据tag解析为json
+	this.ServeJSON()
 }

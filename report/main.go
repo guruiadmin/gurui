@@ -7,6 +7,8 @@ import (
 	_"report/conf"
 )
 
+//set GOARCH=amd64
+//set GOOS=linux
 func main() {
 	beego.InsertFilter("*", beego.BeforeRouter, cors.Allow(&cors.Options{
 		AllowAllOrigins:  true,

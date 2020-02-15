@@ -217,3 +217,490 @@
 2020/01/19 18:39:46.286 [I] [asm_386.s:1325]  http server Running on http://:8080
 2020/01/19 18:41:38.884 [I] [asm_386.s:1325]  http server Running on http://:8080
 2020/01/19 18:43:12.224 [I] [asm_386.s:1325]  http server Running on http://:8080
+2020/01/31 16:45:34.681 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 09:06:27.452 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 09:07:23.400 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 09:10:19.092 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 09:34:14.014 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 09:35:13.259 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 09:35:41.839 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 09:36:08.432 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 09:39:32.752 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 09:40:25.959 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 09:47:08.303 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 09:49:55.930 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 09:51:47.083 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 09:51:53.028 [C] [panic.go:522]  the request url is  /business
+2020/02/01 09:51:53.029 [C] [panic.go:522]  Handler crashed with error invalid WriteHeader code 5000
+2020/02/01 09:51:53.029 [C] [panic.go:522]  /home/python/go/src/runtime/panic.go:522
+2020/02/01 09:51:53.029 [C] [panic.go:522]  /home/python/go/src/net/http/server.go:1093
+2020/02/01 09:51:53.029 [C] [panic.go:522]  /home/python/go/src/net/http/server.go:1127
+2020/02/01 09:51:53.029 [C] [panic.go:522]  /home/python/gocode/src/github.com/astaxie/beego/context/context.go:230
+2020/02/01 09:51:53.029 [C] [panic.go:522]  /home/python/gocode/src/github.com/astaxie/beego/controller.go:352
+2020/02/01 09:51:53.029 [C] [panic.go:522]  /home/python/gocode/src/report/controllers/business.go:26
+2020/02/01 09:51:53.029 [C] [panic.go:522]  /home/python/gocode/src/github.com/astaxie/beego/router.go:835
+2020/02/01 09:51:53.029 [C] [panic.go:522]  /home/python/go/src/net/http/server.go:2774
+2020/02/01 09:51:53.029 [C] [panic.go:522]  /home/python/go/src/net/http/server.go:1878
+2020/02/01 09:51:53.029 [C] [panic.go:522]  /home/python/go/src/runtime/asm_amd64.s:1337
+2020/02/01 09:52:09.918 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 09:59:10.962 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 10:01:48.803 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 10:08:51.209 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 10:09:41.174 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 10:10:37.394 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 10:10:58.507 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 10:11:18.423 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 10:13:33.034 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 10:14:01.823 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 10:14:39.693 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 10:15:15.262 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 10:16:41.753 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 10:23:10.784 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 10:25:01.045 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 10:33:05.018 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 10:53:29.380 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 11:02:20.800 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 11:03:58.150 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 11:20:06.301 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 11:22:34.687 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 11:22:44.789 [E] [value.go:447]  Error 1146: Table 'dev.goods' doesn't exist
+2020/02/01 12:00:24.835 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 13:23:55.451 [E] [router.go:835]  invalid connection
+2020/02/01 13:25:44.344 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 13:29:14.555 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 13:54:11.048 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 13:58:23.108 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 14:00:13.601 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 14:01:05.092 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 14:02:48.907 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 14:05:11.783 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 14:05:35.116 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/01 14:08:23.302 [I] [asm_amd64.s:1337]  http server Running on http://:8080
+2020/02/03 16:23:09.434 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 14:23:31.036 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 14:27:54.718 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 14:54:58.657 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 15:34:05.120 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 15:36:49.808 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 15:38:25.736 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 16:21:28.343 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 16:44:00.779 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 16:49:25.767 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 16:56:29.927 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 17:00:59.818 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 17:02:38.786 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 17:03:19.691 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 17:08:19.879 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 17:08:25.526 [C] [panic.go:679]  the request url is  /personnel
+2020/02/14 17:08:25.526 [C] [panic.go:679]  Handler crashed with error interface conversion: interface {} is nil, not []map[string]interface {}
+2020/02/14 17:08:25.526 [C] [panic.go:679]  D:/golang/go/src/runtime/panic.go:679
+2020/02/14 17:08:25.526 [C] [panic.go:679]  D:/golang/go/src/runtime/iface.go:255
+2020/02/14 17:08:25.526 [C] [panic.go:679]  D:/golang/src/report/controllers/personnel.go:82
+2020/02/14 17:08:25.527 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:460
+2020/02/14 17:08:25.527 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:321
+2020/02/14 17:08:25.527 [C] [panic.go:679]  D:/golang/src/github.com/astaxie/beego/router.go:853
+2020/02/14 17:08:25.527 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:2802
+2020/02/14 17:08:25.527 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:1890
+2020/02/14 17:08:25.527 [C] [panic.go:679]  D:/golang/go/src/runtime/asm_amd64.s:1357
+2020/02/14 17:08:25.530 [server.go:3054]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/02/14 17:10:31.143 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 17:10:35.910 [C] [panic.go:679]  the request url is  /personnel
+2020/02/14 17:10:35.911 [C] [panic.go:679]  Handler crashed with error interface conversion: interface {} is []interface {}, not []map[string]interface {}
+2020/02/14 17:10:35.911 [C] [panic.go:679]  D:/golang/go/src/runtime/panic.go:679
+2020/02/14 17:10:35.911 [C] [panic.go:679]  D:/golang/go/src/runtime/iface.go:255
+2020/02/14 17:10:35.911 [C] [panic.go:679]  D:/golang/src/report/controllers/personnel.go:82
+2020/02/14 17:10:35.911 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:460
+2020/02/14 17:10:35.911 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:321
+2020/02/14 17:10:35.911 [C] [panic.go:679]  D:/golang/src/github.com/astaxie/beego/router.go:853
+2020/02/14 17:10:35.911 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:2802
+2020/02/14 17:10:35.911 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:1890
+2020/02/14 17:10:35.911 [C] [panic.go:679]  D:/golang/go/src/runtime/asm_amd64.s:1357
+2020/02/14 17:10:35.912 [server.go:3054]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/02/14 17:12:33.403 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 17:16:16.065 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 17:16:21.596 [C] [panic.go:679]  the request url is  /personnel
+2020/02/14 17:16:21.596 [C] [panic.go:679]  Handler crashed with error interface conversion: interface {} is nil, not map[string]string
+2020/02/14 17:16:21.596 [C] [panic.go:679]  D:/golang/go/src/runtime/panic.go:679
+2020/02/14 17:16:21.596 [C] [panic.go:679]  D:/golang/go/src/runtime/iface.go:255
+2020/02/14 17:16:21.596 [C] [panic.go:679]  D:/golang/src/report/controllers/personnel.go:82
+2020/02/14 17:16:21.596 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:460
+2020/02/14 17:16:21.596 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:321
+2020/02/14 17:16:21.596 [C] [panic.go:679]  D:/golang/src/github.com/astaxie/beego/router.go:853
+2020/02/14 17:16:21.596 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:2802
+2020/02/14 17:16:21.596 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:1890
+2020/02/14 17:16:21.596 [C] [panic.go:679]  D:/golang/go/src/runtime/asm_amd64.s:1357
+2020/02/14 17:16:21.597 [server.go:3054]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/02/14 17:16:59.939 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 17:17:03.939 [C] [panic.go:679]  the request url is  /personnel
+2020/02/14 17:17:03.939 [C] [panic.go:679]  Handler crashed with error interface conversion: interface {} is nil, not []interface {}
+2020/02/14 17:17:03.939 [C] [panic.go:679]  D:/golang/go/src/runtime/panic.go:679
+2020/02/14 17:17:03.939 [C] [panic.go:679]  D:/golang/go/src/runtime/iface.go:255
+2020/02/14 17:17:03.939 [C] [panic.go:679]  D:/golang/src/report/controllers/personnel.go:82
+2020/02/14 17:17:03.939 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:460
+2020/02/14 17:17:03.939 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:321
+2020/02/14 17:17:03.939 [C] [panic.go:679]  D:/golang/src/github.com/astaxie/beego/router.go:853
+2020/02/14 17:17:03.939 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:2802
+2020/02/14 17:17:03.939 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:1890
+2020/02/14 17:17:03.939 [C] [panic.go:679]  D:/golang/go/src/runtime/asm_amd64.s:1357
+2020/02/14 17:17:03.940 [server.go:3054]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/02/14 17:17:47.874 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 17:19:12.016 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 17:19:16.749 [C] [panic.go:679]  the request url is  /personnel
+2020/02/14 17:19:16.749 [C] [panic.go:679]  Handler crashed with error interface conversion: interface {} is nil, not []interface {}
+2020/02/14 17:19:16.749 [C] [panic.go:679]  D:/golang/go/src/runtime/panic.go:679
+2020/02/14 17:19:16.749 [C] [panic.go:679]  D:/golang/go/src/runtime/iface.go:255
+2020/02/14 17:19:16.749 [C] [panic.go:679]  D:/golang/src/report/controllers/personnel.go:82
+2020/02/14 17:19:16.749 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:460
+2020/02/14 17:19:16.749 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:321
+2020/02/14 17:19:16.749 [C] [panic.go:679]  D:/golang/src/github.com/astaxie/beego/router.go:853
+2020/02/14 17:19:16.749 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:2802
+2020/02/14 17:19:16.749 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:1890
+2020/02/14 17:19:16.749 [C] [panic.go:679]  D:/golang/go/src/runtime/asm_amd64.s:1357
+2020/02/14 17:19:16.751 [server.go:3054]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/02/14 17:19:53.346 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 17:21:53.155 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 17:21:57.909 [C] [panic.go:679]  the request url is  /personnel
+2020/02/14 17:21:57.909 [C] [panic.go:679]  Handler crashed with error interface conversion: interface {} is nil, not []interface {}
+2020/02/14 17:21:57.909 [C] [panic.go:679]  D:/golang/go/src/runtime/panic.go:679
+2020/02/14 17:21:57.909 [C] [panic.go:679]  D:/golang/go/src/runtime/iface.go:255
+2020/02/14 17:21:57.909 [C] [panic.go:679]  D:/golang/src/report/controllers/personnel.go:83
+2020/02/14 17:21:57.909 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:460
+2020/02/14 17:21:57.909 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:321
+2020/02/14 17:21:57.909 [C] [panic.go:679]  D:/golang/src/github.com/astaxie/beego/router.go:853
+2020/02/14 17:21:57.909 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:2802
+2020/02/14 17:21:57.909 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:1890
+2020/02/14 17:21:57.909 [C] [panic.go:679]  D:/golang/go/src/runtime/asm_amd64.s:1357
+2020/02/14 17:21:57.910 [server.go:3054]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/02/14 17:34:06.398 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 17:35:43.194 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 17:35:46.863 [C] [panic.go:679]  the request url is  /personnel
+2020/02/14 17:35:46.863 [C] [panic.go:679]  Handler crashed with error interface conversion: interface {} is nil, not []interface {}
+2020/02/14 17:35:46.863 [C] [panic.go:679]  D:/golang/go/src/runtime/panic.go:679
+2020/02/14 17:35:46.864 [C] [panic.go:679]  D:/golang/go/src/runtime/iface.go:255
+2020/02/14 17:35:46.864 [C] [panic.go:679]  D:/golang/src/report/controllers/personnel.go:83
+2020/02/14 17:35:46.864 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:460
+2020/02/14 17:35:46.864 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:321
+2020/02/14 17:35:46.864 [C] [panic.go:679]  D:/golang/src/github.com/astaxie/beego/router.go:853
+2020/02/14 17:35:46.864 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:2802
+2020/02/14 17:35:46.864 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:1890
+2020/02/14 17:35:46.864 [C] [panic.go:679]  D:/golang/go/src/runtime/asm_amd64.s:1357
+2020/02/14 17:35:46.866 [server.go:3054]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/02/14 17:37:23.336 [C] [panic.go:679]  the request url is  /personnel
+2020/02/14 17:37:23.336 [C] [panic.go:679]  Handler crashed with error interface conversion: interface {} is nil, not []interface {}
+2020/02/14 17:37:23.337 [C] [panic.go:679]  D:/golang/go/src/runtime/panic.go:679
+2020/02/14 17:37:23.337 [C] [panic.go:679]  D:/golang/go/src/runtime/iface.go:255
+2020/02/14 17:37:23.337 [C] [panic.go:679]  D:/golang/src/report/controllers/personnel.go:83
+2020/02/14 17:37:23.337 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:460
+2020/02/14 17:37:23.337 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:321
+2020/02/14 17:37:23.337 [C] [panic.go:679]  D:/golang/src/github.com/astaxie/beego/router.go:853
+2020/02/14 17:37:23.337 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:2802
+2020/02/14 17:37:23.337 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:1890
+2020/02/14 17:37:23.337 [C] [panic.go:679]  D:/golang/go/src/runtime/asm_amd64.s:1357
+2020/02/14 17:37:23.338 [server.go:3054]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/02/14 17:38:09.785 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 17:39:30.091 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 17:39:46.568 [C] [panic.go:679]  the request url is  /personnel
+2020/02/14 17:39:46.568 [C] [panic.go:679]  Handler crashed with error interface conversion: interface {} is nil, not []interface {}
+2020/02/14 17:39:46.568 [C] [panic.go:679]  D:/golang/go/src/runtime/panic.go:679
+2020/02/14 17:39:46.568 [C] [panic.go:679]  D:/golang/go/src/runtime/iface.go:255
+2020/02/14 17:39:46.568 [C] [panic.go:679]  D:/golang/src/report/controllers/personnel.go:83
+2020/02/14 17:39:46.568 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:460
+2020/02/14 17:39:46.568 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:321
+2020/02/14 17:39:46.568 [C] [panic.go:679]  D:/golang/src/github.com/astaxie/beego/router.go:853
+2020/02/14 17:39:46.568 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:2802
+2020/02/14 17:39:46.568 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:1890
+2020/02/14 17:39:46.568 [C] [panic.go:679]  D:/golang/go/src/runtime/asm_amd64.s:1357
+2020/02/14 17:39:46.569 [server.go:3054]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/02/14 17:42:19.913 [C] [panic.go:679]  the request url is  /personnel
+2020/02/14 17:42:19.913 [C] [panic.go:679]  Handler crashed with error interface conversion: interface {} is nil, not []interface {}
+2020/02/14 17:42:19.913 [C] [panic.go:679]  D:/golang/go/src/runtime/panic.go:679
+2020/02/14 17:42:19.914 [C] [panic.go:679]  D:/golang/go/src/runtime/iface.go:255
+2020/02/14 17:42:19.914 [C] [panic.go:679]  D:/golang/src/report/controllers/personnel.go:83
+2020/02/14 17:42:19.914 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:460
+2020/02/14 17:42:19.914 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:321
+2020/02/14 17:42:19.914 [C] [panic.go:679]  D:/golang/src/github.com/astaxie/beego/router.go:853
+2020/02/14 17:42:19.914 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:2802
+2020/02/14 17:42:19.914 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:1890
+2020/02/14 17:42:19.914 [C] [panic.go:679]  D:/golang/go/src/runtime/asm_amd64.s:1357
+2020/02/14 17:42:19.915 [server.go:3054]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/02/14 17:42:32.093 [C] [panic.go:679]  the request url is  /personnel
+2020/02/14 17:42:32.093 [C] [panic.go:679]  Handler crashed with error interface conversion: interface {} is nil, not []interface {}
+2020/02/14 17:42:32.093 [C] [panic.go:679]  D:/golang/go/src/runtime/panic.go:679
+2020/02/14 17:42:32.093 [C] [panic.go:679]  D:/golang/go/src/runtime/iface.go:255
+2020/02/14 17:42:32.093 [C] [panic.go:679]  D:/golang/src/report/controllers/personnel.go:83
+2020/02/14 17:42:32.093 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:460
+2020/02/14 17:42:32.093 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:321
+2020/02/14 17:42:32.093 [C] [panic.go:679]  D:/golang/src/github.com/astaxie/beego/router.go:853
+2020/02/14 17:42:32.093 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:2802
+2020/02/14 17:42:32.093 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:1890
+2020/02/14 17:42:32.093 [C] [panic.go:679]  D:/golang/go/src/runtime/asm_amd64.s:1357
+2020/02/14 17:42:32.094 [server.go:3054]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/02/14 17:42:46.010 [C] [panic.go:679]  the request url is  /personnel
+2020/02/14 17:42:46.010 [C] [panic.go:679]  Handler crashed with error interface conversion: interface {} is nil, not []interface {}
+2020/02/14 17:42:46.010 [C] [panic.go:679]  D:/golang/go/src/runtime/panic.go:679
+2020/02/14 17:42:46.010 [C] [panic.go:679]  D:/golang/go/src/runtime/iface.go:255
+2020/02/14 17:42:46.010 [C] [panic.go:679]  D:/golang/src/report/controllers/personnel.go:83
+2020/02/14 17:42:46.010 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:460
+2020/02/14 17:42:46.010 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:321
+2020/02/14 17:42:46.010 [C] [panic.go:679]  D:/golang/src/github.com/astaxie/beego/router.go:853
+2020/02/14 17:42:46.010 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:2802
+2020/02/14 17:42:46.010 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:1890
+2020/02/14 17:42:46.010 [C] [panic.go:679]  D:/golang/go/src/runtime/asm_amd64.s:1357
+2020/02/14 17:42:46.011 [server.go:3054]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/02/14 17:42:53.869 [C] [panic.go:679]  the request url is  /personnel
+2020/02/14 17:42:53.869 [C] [panic.go:679]  Handler crashed with error interface conversion: interface {} is nil, not []interface {}
+2020/02/14 17:42:53.869 [C] [panic.go:679]  D:/golang/go/src/runtime/panic.go:679
+2020/02/14 17:42:53.869 [C] [panic.go:679]  D:/golang/go/src/runtime/iface.go:255
+2020/02/14 17:42:53.869 [C] [panic.go:679]  D:/golang/src/report/controllers/personnel.go:83
+2020/02/14 17:42:53.869 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:460
+2020/02/14 17:42:53.869 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:321
+2020/02/14 17:42:53.869 [C] [panic.go:679]  D:/golang/src/github.com/astaxie/beego/router.go:853
+2020/02/14 17:42:53.869 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:2802
+2020/02/14 17:42:53.869 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:1890
+2020/02/14 17:42:53.869 [C] [panic.go:679]  D:/golang/go/src/runtime/asm_amd64.s:1357
+2020/02/14 17:42:53.869 [server.go:3054]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/02/14 17:44:36.671 [C] [panic.go:679]  the request url is  /personnel
+2020/02/14 17:44:36.671 [C] [panic.go:679]  Handler crashed with error interface conversion: interface {} is nil, not []interface {}
+2020/02/14 17:44:36.671 [C] [panic.go:679]  D:/golang/go/src/runtime/panic.go:679
+2020/02/14 17:44:36.671 [C] [panic.go:679]  D:/golang/go/src/runtime/iface.go:255
+2020/02/14 17:44:36.671 [C] [panic.go:679]  D:/golang/src/report/controllers/personnel.go:83
+2020/02/14 17:44:36.671 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:460
+2020/02/14 17:44:36.671 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:321
+2020/02/14 17:44:36.671 [C] [panic.go:679]  D:/golang/src/github.com/astaxie/beego/router.go:853
+2020/02/14 17:44:36.671 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:2802
+2020/02/14 17:44:36.671 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:1890
+2020/02/14 17:44:36.671 [C] [panic.go:679]  D:/golang/go/src/runtime/asm_amd64.s:1357
+2020/02/14 17:44:36.672 [server.go:3054]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/02/14 17:57:58.201 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 17:58:05.427 [C] [panic.go:679]  the request url is  /personnel
+2020/02/14 17:58:05.427 [C] [panic.go:679]  Handler crashed with error interface conversion: interface {} is nil, not []interface {}
+2020/02/14 17:58:05.427 [C] [panic.go:679]  D:/golang/go/src/runtime/panic.go:679
+2020/02/14 17:58:05.427 [C] [panic.go:679]  D:/golang/go/src/runtime/iface.go:255
+2020/02/14 17:58:05.427 [C] [panic.go:679]  D:/golang/src/report/controllers/personnel.go:82
+2020/02/14 17:58:05.427 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:460
+2020/02/14 17:58:05.427 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:321
+2020/02/14 17:58:05.427 [C] [panic.go:679]  D:/golang/src/github.com/astaxie/beego/router.go:853
+2020/02/14 17:58:05.427 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:2802
+2020/02/14 17:58:05.428 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:1890
+2020/02/14 17:58:05.428 [C] [panic.go:679]  D:/golang/go/src/runtime/asm_amd64.s:1357
+2020/02/14 17:58:05.430 [server.go:3054]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/02/14 17:58:19.543 [C] [panic.go:679]  the request url is  /personnel
+2020/02/14 17:58:19.543 [C] [panic.go:679]  Handler crashed with error interface conversion: interface {} is nil, not []interface {}
+2020/02/14 17:58:19.543 [C] [panic.go:679]  D:/golang/go/src/runtime/panic.go:679
+2020/02/14 17:58:19.543 [C] [panic.go:679]  D:/golang/go/src/runtime/iface.go:255
+2020/02/14 17:58:19.543 [C] [panic.go:679]  D:/golang/src/report/controllers/personnel.go:82
+2020/02/14 17:58:19.543 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:460
+2020/02/14 17:58:19.543 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:321
+2020/02/14 17:58:19.543 [C] [panic.go:679]  D:/golang/src/github.com/astaxie/beego/router.go:853
+2020/02/14 17:58:19.543 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:2802
+2020/02/14 17:58:19.543 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:1890
+2020/02/14 17:58:19.543 [C] [panic.go:679]  D:/golang/go/src/runtime/asm_amd64.s:1357
+2020/02/14 17:58:19.544 [server.go:3054]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/02/14 17:59:08.515 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 17:59:12.806 [C] [panic.go:679]  the request url is  /personnel
+2020/02/14 17:59:12.806 [C] [panic.go:679]  Handler crashed with error interface conversion: interface {} is nil, not []interface {}
+2020/02/14 17:59:12.806 [C] [panic.go:679]  D:/golang/go/src/runtime/panic.go:679
+2020/02/14 17:59:12.806 [C] [panic.go:679]  D:/golang/go/src/runtime/iface.go:255
+2020/02/14 17:59:12.806 [C] [panic.go:679]  D:/golang/src/report/controllers/personnel.go:83
+2020/02/14 17:59:12.806 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:460
+2020/02/14 17:59:12.806 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:321
+2020/02/14 17:59:12.806 [C] [panic.go:679]  D:/golang/src/github.com/astaxie/beego/router.go:853
+2020/02/14 17:59:12.806 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:2802
+2020/02/14 17:59:12.806 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:1890
+2020/02/14 17:59:12.806 [C] [panic.go:679]  D:/golang/go/src/runtime/asm_amd64.s:1357
+2020/02/14 17:59:12.807 [server.go:3054]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/02/14 18:24:16.540 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 18:24:21.577 [C] [panic.go:679]  the request url is  /personnel
+2020/02/14 18:24:21.577 [C] [panic.go:679]  Handler crashed with error interface conversion: interface {} is nil, not []interface {}
+2020/02/14 18:24:21.577 [C] [panic.go:679]  D:/golang/go/src/runtime/panic.go:679
+2020/02/14 18:24:21.577 [C] [panic.go:679]  D:/golang/go/src/runtime/iface.go:255
+2020/02/14 18:24:21.577 [C] [panic.go:679]  D:/golang/src/report/controllers/personnel.go:83
+2020/02/14 18:24:21.577 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:460
+2020/02/14 18:24:21.577 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:321
+2020/02/14 18:24:21.577 [C] [panic.go:679]  D:/golang/src/github.com/astaxie/beego/router.go:853
+2020/02/14 18:24:21.578 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:2802
+2020/02/14 18:24:21.578 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:1890
+2020/02/14 18:24:21.578 [C] [panic.go:679]  D:/golang/go/src/runtime/asm_amd64.s:1357
+2020/02/14 18:24:21.578 [server.go:3054]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/02/14 18:25:01.147 [C] [panic.go:679]  the request url is  /personnel
+2020/02/14 18:25:01.147 [C] [panic.go:679]  Handler crashed with error interface conversion: interface {} is nil, not []interface {}
+2020/02/14 18:25:01.147 [C] [panic.go:679]  D:/golang/go/src/runtime/panic.go:679
+2020/02/14 18:25:01.147 [C] [panic.go:679]  D:/golang/go/src/runtime/iface.go:255
+2020/02/14 18:25:01.147 [C] [panic.go:679]  D:/golang/src/report/controllers/personnel.go:83
+2020/02/14 18:25:01.147 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:460
+2020/02/14 18:25:01.147 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:321
+2020/02/14 18:25:01.147 [C] [panic.go:679]  D:/golang/src/github.com/astaxie/beego/router.go:853
+2020/02/14 18:25:01.147 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:2802
+2020/02/14 18:25:01.147 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:1890
+2020/02/14 18:25:01.147 [C] [panic.go:679]  D:/golang/go/src/runtime/asm_amd64.s:1357
+2020/02/14 18:25:01.148 [server.go:3054]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/02/14 18:25:10.963 [C] [panic.go:679]  the request url is  /personnel
+2020/02/14 18:25:10.963 [C] [panic.go:679]  Handler crashed with error interface conversion: interface {} is nil, not []interface {}
+2020/02/14 18:25:10.963 [C] [panic.go:679]  D:/golang/go/src/runtime/panic.go:679
+2020/02/14 18:25:10.964 [C] [panic.go:679]  D:/golang/go/src/runtime/iface.go:255
+2020/02/14 18:25:10.964 [C] [panic.go:679]  D:/golang/src/report/controllers/personnel.go:83
+2020/02/14 18:25:10.964 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:460
+2020/02/14 18:25:10.964 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:321
+2020/02/14 18:25:10.964 [C] [panic.go:679]  D:/golang/src/github.com/astaxie/beego/router.go:853
+2020/02/14 18:25:10.964 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:2802
+2020/02/14 18:25:10.964 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:1890
+2020/02/14 18:25:10.964 [C] [panic.go:679]  D:/golang/go/src/runtime/asm_amd64.s:1357
+2020/02/14 18:25:10.964 [server.go:3054]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/02/14 18:25:30.683 [C] [panic.go:679]  the request url is  /personnel
+2020/02/14 18:25:30.683 [C] [panic.go:679]  Handler crashed with error interface conversion: interface {} is nil, not []interface {}
+2020/02/14 18:25:30.684 [C] [panic.go:679]  D:/golang/go/src/runtime/panic.go:679
+2020/02/14 18:25:30.684 [C] [panic.go:679]  D:/golang/go/src/runtime/iface.go:255
+2020/02/14 18:25:30.684 [C] [panic.go:679]  D:/golang/src/report/controllers/personnel.go:83
+2020/02/14 18:25:30.684 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:460
+2020/02/14 18:25:30.684 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:321
+2020/02/14 18:25:30.684 [C] [panic.go:679]  D:/golang/src/github.com/astaxie/beego/router.go:853
+2020/02/14 18:25:30.684 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:2802
+2020/02/14 18:25:30.684 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:1890
+2020/02/14 18:25:30.684 [C] [panic.go:679]  D:/golang/go/src/runtime/asm_amd64.s:1357
+2020/02/14 18:25:30.684 [server.go:3054]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/02/14 18:26:46.794 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 18:28:44.069 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 18:28:48.035 [C] [panic.go:679]  the request url is  /personnel
+2020/02/14 18:28:48.035 [C] [panic.go:679]  Handler crashed with error interface conversion: interface {} is map[string]interface {}, not []interface {}
+2020/02/14 18:28:48.035 [C] [panic.go:679]  D:/golang/go/src/runtime/panic.go:679
+2020/02/14 18:28:48.035 [C] [panic.go:679]  D:/golang/go/src/runtime/iface.go:255
+2020/02/14 18:28:48.035 [C] [panic.go:679]  D:/golang/src/report/controllers/personnel.go:84
+2020/02/14 18:28:48.035 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:460
+2020/02/14 18:28:48.035 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:321
+2020/02/14 18:28:48.035 [C] [panic.go:679]  D:/golang/src/github.com/astaxie/beego/router.go:853
+2020/02/14 18:28:48.035 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:2802
+2020/02/14 18:28:48.035 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:1890
+2020/02/14 18:28:48.035 [C] [panic.go:679]  D:/golang/go/src/runtime/asm_amd64.s:1357
+2020/02/14 18:28:48.036 [server.go:3054]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/02/14 18:29:28.172 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 18:31:26.029 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 18:32:31.774 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 18:32:35.163 [C] [panic.go:679]  the request url is  /personnel
+2020/02/14 18:32:35.163 [C] [panic.go:679]  Handler crashed with error interface conversion: interface {} is nil, not []interface {}
+2020/02/14 18:32:35.163 [C] [panic.go:679]  D:/golang/go/src/runtime/panic.go:679
+2020/02/14 18:32:35.163 [C] [panic.go:679]  D:/golang/go/src/runtime/iface.go:255
+2020/02/14 18:32:35.163 [C] [panic.go:679]  D:/golang/src/report/controllers/personnel.go:80
+2020/02/14 18:32:35.163 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:460
+2020/02/14 18:32:35.163 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:321
+2020/02/14 18:32:35.163 [C] [panic.go:679]  D:/golang/src/github.com/astaxie/beego/router.go:853
+2020/02/14 18:32:35.163 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:2802
+2020/02/14 18:32:35.163 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:1890
+2020/02/14 18:32:35.164 [C] [panic.go:679]  D:/golang/go/src/runtime/asm_amd64.s:1357
+2020/02/14 18:32:35.164 [server.go:3054]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/02/14 18:33:02.860 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 18:34:24.371 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 18:34:27.891 [C] [panic.go:679]  the request url is  /personnel
+2020/02/14 18:34:27.891 [C] [panic.go:679]  Handler crashed with error interface conversion: interface {} is map[string]interface {}, not map[string]string
+2020/02/14 18:34:27.891 [C] [panic.go:679]  D:/golang/go/src/runtime/panic.go:679
+2020/02/14 18:34:27.891 [C] [panic.go:679]  D:/golang/go/src/runtime/iface.go:255
+2020/02/14 18:34:27.891 [C] [panic.go:679]  D:/golang/src/report/controllers/personnel.go:81
+2020/02/14 18:34:27.891 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:460
+2020/02/14 18:34:27.891 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:321
+2020/02/14 18:34:27.891 [C] [panic.go:679]  D:/golang/src/github.com/astaxie/beego/router.go:853
+2020/02/14 18:34:27.891 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:2802
+2020/02/14 18:34:27.891 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:1890
+2020/02/14 18:34:27.891 [C] [panic.go:679]  D:/golang/go/src/runtime/asm_amd64.s:1357
+2020/02/14 18:34:27.892 [server.go:3054]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/02/14 18:35:00.718 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 18:35:03.688 [C] [panic.go:679]  the request url is  /personnel
+2020/02/14 18:35:03.688 [C] [panic.go:679]  Handler crashed with error interface conversion: interface {} is nil, not []interface {}
+2020/02/14 18:35:03.688 [C] [panic.go:679]  D:/golang/go/src/runtime/panic.go:679
+2020/02/14 18:35:03.688 [C] [panic.go:679]  D:/golang/go/src/runtime/iface.go:255
+2020/02/14 18:35:03.688 [C] [panic.go:679]  D:/golang/src/report/controllers/personnel.go:80
+2020/02/14 18:35:03.688 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:460
+2020/02/14 18:35:03.689 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:321
+2020/02/14 18:35:03.689 [C] [panic.go:679]  D:/golang/src/github.com/astaxie/beego/router.go:853
+2020/02/14 18:35:03.689 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:2802
+2020/02/14 18:35:03.689 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:1890
+2020/02/14 18:35:03.689 [C] [panic.go:679]  D:/golang/go/src/runtime/asm_amd64.s:1357
+2020/02/14 18:35:03.689 [server.go:3054]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/02/14 18:37:45.449 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 18:37:49.170 [C] [panic.go:679]  the request url is  /personnel
+2020/02/14 18:37:49.170 [C] [panic.go:679]  Handler crashed with error interface conversion: interface {} is nil, not []interface {}
+2020/02/14 18:37:49.170 [C] [panic.go:679]  D:/golang/go/src/runtime/panic.go:679
+2020/02/14 18:37:49.170 [C] [panic.go:679]  D:/golang/go/src/runtime/iface.go:255
+2020/02/14 18:37:49.170 [C] [panic.go:679]  D:/golang/src/report/controllers/personnel.go:81
+2020/02/14 18:37:49.170 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:460
+2020/02/14 18:37:49.170 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:321
+2020/02/14 18:37:49.171 [C] [panic.go:679]  D:/golang/src/github.com/astaxie/beego/router.go:853
+2020/02/14 18:37:49.171 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:2802
+2020/02/14 18:37:49.171 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:1890
+2020/02/14 18:37:49.171 [C] [panic.go:679]  D:/golang/go/src/runtime/asm_amd64.s:1357
+2020/02/14 18:37:49.171 [server.go:3054]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/02/14 20:04:02.446 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 20:04:08.033 [C] [panic.go:679]  the request url is  /personnel
+2020/02/14 20:04:08.033 [C] [panic.go:679]  Handler crashed with error interface conversion: interface {} is nil, not []interface {}
+2020/02/14 20:04:08.033 [C] [panic.go:679]  D:/golang/go/src/runtime/panic.go:679
+2020/02/14 20:04:08.033 [C] [panic.go:679]  D:/golang/go/src/runtime/iface.go:255
+2020/02/14 20:04:08.033 [C] [panic.go:679]  D:/golang/src/report/controllers/personnel.go:80
+2020/02/14 20:04:08.033 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:460
+2020/02/14 20:04:08.033 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:321
+2020/02/14 20:04:08.033 [C] [panic.go:679]  D:/golang/src/github.com/astaxie/beego/router.go:853
+2020/02/14 20:04:08.033 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:2802
+2020/02/14 20:04:08.033 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:1890
+2020/02/14 20:04:08.033 [C] [panic.go:679]  D:/golang/go/src/runtime/asm_amd64.s:1357
+2020/02/14 20:04:08.034 [server.go:3054]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/02/14 20:06:01.161 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 20:06:09.069 [C] [panic.go:679]  the request url is  /personnel
+2020/02/14 20:06:09.069 [C] [panic.go:679]  Handler crashed with error interface conversion: interface {} is nil, not []interface {}
+2020/02/14 20:06:09.069 [C] [panic.go:679]  D:/golang/go/src/runtime/panic.go:679
+2020/02/14 20:06:09.069 [C] [panic.go:679]  D:/golang/go/src/runtime/iface.go:255
+2020/02/14 20:06:09.069 [C] [panic.go:679]  D:/golang/src/report/controllers/personnel.go:80
+2020/02/14 20:06:09.069 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:460
+2020/02/14 20:06:09.070 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:321
+2020/02/14 20:06:09.070 [C] [panic.go:679]  D:/golang/src/github.com/astaxie/beego/router.go:853
+2020/02/14 20:06:09.070 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:2802
+2020/02/14 20:06:09.070 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:1890
+2020/02/14 20:06:09.070 [C] [panic.go:679]  D:/golang/go/src/runtime/asm_amd64.s:1357
+2020/02/14 20:06:09.070 [server.go:3054]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/02/14 20:13:26.182 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 20:13:33.315 [C] [panic.go:679]  the request url is  /personnel
+2020/02/14 20:13:33.315 [C] [panic.go:679]  Handler crashed with error interface conversion: interface {} is nil, not []interface {}
+2020/02/14 20:13:33.315 [C] [panic.go:679]  D:/golang/go/src/runtime/panic.go:679
+2020/02/14 20:13:33.315 [C] [panic.go:679]  D:/golang/go/src/runtime/iface.go:255
+2020/02/14 20:13:33.315 [C] [panic.go:679]  D:/golang/src/report/controllers/personnel.go:80
+2020/02/14 20:13:33.316 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:460
+2020/02/14 20:13:33.316 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:321
+2020/02/14 20:13:33.316 [C] [panic.go:679]  D:/golang/src/github.com/astaxie/beego/router.go:853
+2020/02/14 20:13:33.316 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:2802
+2020/02/14 20:13:33.316 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:1890
+2020/02/14 20:13:33.316 [C] [panic.go:679]  D:/golang/go/src/runtime/asm_amd64.s:1357
+2020/02/14 20:13:33.316 [server.go:3054]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/02/14 20:45:40.216 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/14 20:45:43.964 [C] [panic.go:679]  the request url is  /personnel
+2020/02/14 20:45:43.964 [C] [panic.go:679]  Handler crashed with error interface conversion: interface {} is nil, not []interface {}
+2020/02/14 20:45:43.964 [C] [panic.go:679]  D:/golang/go/src/runtime/panic.go:679
+2020/02/14 20:45:43.964 [C] [panic.go:679]  D:/golang/go/src/runtime/iface.go:255
+2020/02/14 20:45:43.964 [C] [panic.go:679]  D:/golang/src/report/controllers/personnel.go:81
+2020/02/14 20:45:43.964 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:460
+2020/02/14 20:45:43.964 [C] [panic.go:679]  D:/golang/go/src/reflect/value.go:321
+2020/02/14 20:45:43.964 [C] [panic.go:679]  D:/golang/src/github.com/astaxie/beego/router.go:853
+2020/02/14 20:45:43.964 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:2802
+2020/02/14 20:45:43.964 [C] [panic.go:679]  D:/golang/go/src/net/http/server.go:1890
+2020/02/14 20:45:43.964 [C] [panic.go:679]  D:/golang/go/src/runtime/asm_amd64.s:1357
+2020/02/14 20:45:43.968 [server.go:3054]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/02/15 14:06:42.407 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/15 14:08:16.851 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/15 14:09:51.422 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/15 14:10:22.459 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/15 14:28:04.887 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/15 14:30:38.373 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/15 14:31:07.780 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/15 14:33:12.130 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/15 14:38:20.915 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/15 14:39:00.453 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/15 14:40:55.730 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/15 14:41:27.590 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/15 14:42:36.146 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/15 14:44:23.048 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/15 14:45:49.083 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/15 14:46:45.908 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/15 14:48:46.472 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/15 14:50:13.000 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/15 14:56:00.806 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/15 14:56:50.311 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/15 15:11:07.182 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/15 15:16:16.145 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/15 15:17:54.775 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/15 15:18:36.072 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/02/15 15:19:11.234 [I] [asm_amd64.s:1357]  http server Running on http://:8080
