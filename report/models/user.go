@@ -24,3 +24,19 @@ type Staff struct {
 	Sys_level   string    `orm:"size(255); description(级别)" json:"sys_level"`
 	Create_time time.Time `orm:"auto_now; type(datetime); description(用户登录时间)" json:"create_time"`
 }
+
+
+
+type Employee_details struct {
+	Userid        int64     `orm:"auto; pk" json:"userid"`
+	Unionid  string    `orm:"size(25); description(管理员名字)" json:"unionid"`
+	Order  string    `orm:"size(25); description(诊所id)" json:"order"`
+	Mobile  string    `orm:"size(255); description(管理员id)" json:"mobile"`
+	Tel   string    `orm:"size(255); description(是否是管理员)" json:"tel"`
+	WorkPlace   string    `orm:"size(255); description(级别)" json:"workPlace"`
+	Remark  string    `orm:"size(25); description(管理员名字)" json:"remark"`
+	IsAdmin  string    `orm:"size(25); description(诊所id)" json:"isAdmin"`
+	IsBoss  string    `orm:"size(255); description(管理员id)" json:"isBoss"`
+	IsLeader   string    `orm:"size(255); description(是否是管理员)" json:"isLeader"`
+	Name   string    `orm:"size(255); description(级别)" json:"name"`
+}
